@@ -1,18 +1,20 @@
 import React from 'react'
-const headerNav = () => {
+import { IoIosArrowDown} from 'react-icons/io'
+import '../assets/css/components/headerNav.css'
+const HeaderNav = () => {
     return (
         <>
-            <div className="flex justify-between p-4">
+            <div className="flex text-md header items-center font-bold justify-between p-3">
                 <div>
-                    <button className="">Country/Region</button>
+                    <button className="header--button px-4 py-2 font-bold rounded-xl ">Country/Region<span className='text-xl ml-1 font-bold'><IoIosArrowDown className="inline" /></span> </button>
                 </div>
-                <div className="flex gap-x-6 justify-end">
+                <div className="flex gap-x-6 text-black justify-end">
                     <div><a href="/support">Support </a></div>
-                    <div><a href="/contact">Contact</a></div>
+                    <div><a href="/contact">Contact us</a></div>
                 </div>
             </div>
         </>
     )
 }
 
-export default headerNav
+export default HeaderNav

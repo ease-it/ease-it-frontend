@@ -1,0 +1,13 @@
+.get-started
+{
+    background-image: url(../../images/GetStarted.png);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.get-started-heading
+{
+    font-family: 'DM Serif Display', serif;
+    color: #161859;
+}

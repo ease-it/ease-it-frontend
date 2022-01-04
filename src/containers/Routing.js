@@ -1,10 +1,10 @@
 import React from 'react'
-import HeaderNav from '../components/headerNav'
+import Home from '../pages/Home'
 
 const Routing = () => {
     return (
         <div>
-            <HeaderNav/>
+           <Home/>
         </div>
     )
 }

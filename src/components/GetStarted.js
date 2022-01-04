@@ -1,9 +1,11 @@
 import React from 'react'
+import {AiOutlineArrowRight} from "react-icons/ai"
+import { IoLogoGooglePlaystore } from "react-icons/io5"
 import '../assets/css/components/GetStarted.css'
 const GetStarted = () => {
     return (
         <>
-            <div className="get-started w-full flex flex-col px-10 justify-center  ">
+            <div className="get-started  w-full flex flex-col px-10 justify-center  ">
                 <div className='px-10'>
                     <div className="get-started-heading text-6xl font-xl">
                         <h2> The Perfect Platform for  </h2>
@@ -18,16 +20,14 @@ const GetStarted = () => {
                    </div>
                     
                 </div>
-                <div>
-                    <button>Get Started </button>
+                <div className='px-10 mt-3'>
+                    <button className='py-3 px-4 get-started__button rounded-2xl text-xl '>Get Started <span className='text-xl ml-1 font-bold' ><AiOutlineArrowRight className='inline'/></span>  </button>
                 </div>
+                <button className='mt-3 px-3 get-started__button-white  sm:absolute sm:left-20 sm:bottom-10 text-sm bg-white text-black py-2 font-bold'>
+                    <a href='/'>Download Mobile App <span className='px-2 '><IoLogoGooglePlaystore className='inline'/></span></a>
+                    </button>
             </div>
-            <div>
-                <div>
-                    <a>Download Mobile App</a>
-                </div>
-             
-            </div>
+           
         </>
         
     )

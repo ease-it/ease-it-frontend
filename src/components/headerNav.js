@@ -6,7 +6,7 @@ const HeaderNav = () => {
         <>
             <div className="flex text-md header items-center font-bold justify-between p-3">
                 <div>
-                    <button className="header--button px-4 py-2 font-bold rounded-xl ">Country/Region<span className='text-xl ml-1 font-bold'><IoIosArrowDown className="inline" /></span> </button>
+                    <button className="header--button px-2 py-1  sm:px-4 sm:py-2 font-bold rounded-xl ">Country/Region<span className='text-xl ml-1 font-bold'><IoIosArrowDown className="inline" /></span> </button>
                 </div>
                 <div className="flex gap-x-6 text-black justify-end">
                     <div><a href="/support">Support </a></div>

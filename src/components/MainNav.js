@@ -5,7 +5,7 @@ const MainNav = () => {
         <>
             <div className='flex justify-between gap-y-5 items-center bg-white'>
                 <div className='px-11 relative'>
-                    <img src={logo} alt="ease-it-logo" className="top-5 left-5"  />
+                    <img src={logo} alt="ease-it-logo" className="top-5 min-w-fit left-5"  />
                 </div>
                 <div className =" text-black items-center hidden  xl:block justify-end">
                     <ul className='flex font-extrabold gap-x-6 text-lg items-center primary-color-blue justify-center'>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoIosArrowDown} from 'react-icons/io'
-import '../assets/css/components/headerNav.css'
+import '../assets/css/components/HeaderNav.css'
 const HeaderNav = () => {
     return (
         <>

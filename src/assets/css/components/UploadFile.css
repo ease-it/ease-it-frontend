@@ -1,0 +1,40 @@
+.uploadFileLayout {
+    max-width: 1200px;
+    height: 30vh;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+.fileLabel {
+    border: 1px solid #161859;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    width: 100%
+}
+
+.fromComputerBtn {
+    background-color: #BFC2F8;
+    color: #585C93;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+}
+
+.fromDropdown {
+    background-color: #161859;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+}
+
+#uploadFileFromComputer {
+    display: none;
+}

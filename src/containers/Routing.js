@@ -1,10 +1,12 @@
 import React from 'react'
 import Home from '../pages/Home'
 
+
+
 const Routing = () => {
     return (
         <div>
-           <Home/>
+            <Home />
         </div>
     )
 }

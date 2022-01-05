@@ -11,11 +11,19 @@ body {
     color: #fff;
 }
 
-.primary-color-yellow 
-{
-     background-color: #D39E2A;
+h1 {
+    font-size: 32px;
+}
+
+.primary-color-yellow {
+    background-color: #D39E2A;
 }
 
 .primary-color-blue {
     color: #161859;
+}
+
+.material-icons.pt.pl {
+    transform: translateY(5px);
+    padding-left: 10px;
 }

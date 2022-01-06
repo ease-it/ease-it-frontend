@@ -3,11 +3,11 @@ import LastestCard from './LastestCard'
 
 const LastestEaseIt = () => {
     return (
-        <div className='flex flex-col p-20 justify-center items-center '>
-            <div className='text-4xl font-DM p-10 font-semibold'>
+        <div className='flex flex-col p-5 md:p-20 justify-center items-center '>
+            <div className=' text-2xl md:text-4xl font-DM p-3 md:p-10 font-normal'>
             <h3 className='primary-color-blue'>See Lastest from Ease-it</h3>
             </div>
-            <div className='flex gap-x-6 '>
+            <div className='flex flex-col gap-y-4 md:flex-row  md:gap-x-6 '>
             <LastestCard />
             <LastestCard />
             <LastestCard />

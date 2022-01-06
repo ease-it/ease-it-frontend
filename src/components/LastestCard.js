@@ -6,7 +6,7 @@ const LastestCard = () => {
             <div className=''>
                 <img src={Laptop} alt="A Laptop" />
             </div>
-            <div className='bg-white text-3xl font-DM p-10 font-bold primary-color-blue shadow-xl'>
+            <div className='bg-white text-2xl p-5 font-DM md:p-10 md:font-bold primary-color-blue shadow-xl'>
                 <p>Customize 
                 <br/>your
                 <br/>

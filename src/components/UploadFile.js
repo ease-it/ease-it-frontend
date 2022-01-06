@@ -16,5 +16,4 @@ const UploadFile = ({ title, text, classText, icon }) => (
     </div>
 )
 
-
 export default UploadFile

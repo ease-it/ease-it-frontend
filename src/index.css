@@ -10,41 +10,27 @@ body {
     padding: 0;
     color: #fff;
 }
-<<<<<<< HEAD
 
-h1 {
-    font-size: 32px;
+.font-monserrat {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .primary-color-yellow {
     background-color: #D39E2A;
-=======
-.font-monserrat 
-{
-    font-family: 'Montserrat', sans-serif;
-}
-.primary-color-yellow 
-{
-     background-color: #D39E2A;
->>>>>>> 3040cb1621d10baf93dce3914235ec34920010a8
 }
 
-.font-DM
-{font-family: 'DM Serif Display','san-serif';}
-.primary-color-yellow--text
-{
-    color:#D39E2A;
+.font-DM {
+    font-family: 'DM Serif Display', 'san-serif';
 }
+
+.primary-color-yellow--text {
+    color: #D39E2A;
+}
+
 .primary-color-blue {
     color: #161859;
 }
-<<<<<<< HEAD
 
-.material-icons.pt.pl {
-    transform: translateY(5px);
-    padding-left: 10px;
-=======
-.primary-color-blue__background{
+.primary-color-blue__background {
     background-color: #161859;
->>>>>>> 3040cb1621d10baf93dce3914235ec34920010a8
 }

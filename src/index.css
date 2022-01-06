@@ -10,12 +10,24 @@ body {
     padding: 0;
     color: #fff;
 }
-
+.font-monserrat 
+{
+    font-family: 'Montserrat', sans-serif;
+}
 .primary-color-yellow 
 {
      background-color: #D39E2A;
 }
 
+.font-DM
+{font-family: 'DM Serif Display','san-serif';}
+.primary-color-yellow--text
+{
+    color:#D39E2A;
+}
 .primary-color-blue {
     color: #161859;
+}
+.primary-color-blue__background{
+    background-color: #161859;
 }

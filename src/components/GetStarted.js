@@ -5,25 +5,25 @@ import '../assets/css/components/GetStarted.css'
 const GetStarted = () => {
     return (
         <>
-            <div className="get-started  w-full flex flex-col px-10 justify-center  ">
-                <div className='px-10'>
-                    <div className="get-started-heading text-6xl font-xl">
+            <div className="get-started  w-full flex flex-col px-4 md:px-10 justify-center py-3  ">
+                <div className='md:px-10'>
+                    <div className="get-started-heading text-2xl md:text-6xl ">
                         <h2> The Perfect Platform for  </h2>
                         <h2>Students and Teachers</h2>   
                     </div>
                    <div className="mt-3">
-                        <p>
-                            <span className='block text-2xl font-bold'>grading made really easy, Manage</span>
-                            <span className='block text-2xl font-bold'> Assigment Test and quizzes all</span>
-                            <span className='block text-2xl font-bold'>  with just one click</span>
+                        <p className='font-semibold'>
+                            <span className='md:block text-lg md:text-2xl '>grading made really easy, Manage</span>
+                            <span className='md:block md:text-2xl '> Assigment Test and quizzes all</span>
+                            <span className='md:block md:text-2xl '>  with just one click</span>
                         </p>
                    </div>
                     
                 </div>
-                <div className='px-10 mt-3'>
-                    <button className='py-3 px-4 get-started__button rounded-2xl text-xl '>Get Started <span className='text-xl ml-1 font-bold' ><AiOutlineArrowRight className='inline'/></span>  </button>
+                <div className=' md:px-10 mt-3'>
+                <button className='py-1 px-2 rounded-lg text-lg md:py-3 md:px-4 get-started__button md:rounded-2xl md:text-xl '>Get Started <span className='text-xl ml-1 font-bold' ><AiOutlineArrowRight className='inline'/></span>  </button>
                 </div>
-                <button className='mt-3 px-3 get-started__button-white  sm:absolute sm:left-20 sm:bottom-10 text-sm bg-white text-black py-2 font-bold'>
+                <button className='mt-3 px-3 get-started__button-white  md:absolute md:left-20 md:bottom-10 text-sm bg-white text-black py-2 font-bold'>
                     <a href='/'>Download Mobile App <span className='px-2 '><IoLogoGooglePlaystore className='inline'/></span></a>
                     </button>
             </div>

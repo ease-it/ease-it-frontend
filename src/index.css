@@ -11,6 +11,10 @@ body {
     color: #fff;
 }
 
+h1 {
+    font-size: 32px;
+}
+
 .font-monserrat {
     font-family: 'Montserrat', sans-serif;
 }

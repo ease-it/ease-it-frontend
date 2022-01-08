@@ -1,0 +1,34 @@
+.get-started
+{
+    background-image: url(../../images/GetStarted.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+}
+.get-started-heading
+{
+    font-family: 'DM Serif Display', serif;
+    color: #161859; 
+}
+
+.get-started__button
+{
+    background-color:#161859;
+}
+
+
+@media (max-width:550px)
+{
+.get-started
+{
+    background-size: auto;
+    height: max-content;
+
+}
+/* .get-started__button-white
+{
+    margin: 5px 0 0 0;
+    width: 10rem;
+} */
+}

@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   content: ['./src/**/*.{js,jsx,ts,html}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     screens:{//customised screens
       'xsm':'200px',

@@ -5,8 +5,8 @@ import '../assets/css/components/GetStarted.css'
 const GetStarted = () => {
     return (
         <>
-            <div className="get-started  w-full flex flex-col px-4 md:px-10 justify-center py-3  ">
-                <div className='md:px-10'>
+            <div className="get-started relative  lg:w-full flex flex-col px-4 lg:px-10 justify-center py-3  ">
+                <div className='lg:px-10'>
                     <div className="get-started-heading text-2xl md:text-6xl ">
                         <h2> The Perfect Platform for  </h2>
                         <h2>Students and Teachers</h2>   

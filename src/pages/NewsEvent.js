@@ -10,8 +10,8 @@ const NewsEvent = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         adaptiveHeight: true,
         arrows: true
     };

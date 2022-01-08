@@ -3,7 +3,7 @@ import HeaderNav from '../components/HeaderNav'
 import MainNav from '../components/MainNav'
 import UploadFile from '../components/UploadFile'
 
-const UploadAssignment1 = () => (
+const UploadAssignment = () => (
 
     <div>
         <HeaderNav />
@@ -15,4 +15,4 @@ const UploadAssignment1 = () => (
 )
 
 
-export default UploadAssignment1
+export default UploadAssignment

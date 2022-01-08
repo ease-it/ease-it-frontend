@@ -1,0 +1,9 @@
+npx tailwindcss -i ./src/tailwind/src-styles/reset3.css -o ./src/tailwind/build-styles/reset3.css --watch
+
+npx tailwindcss -i ./src/tailwind/src-styles/reset2.css -o ./src/tailwind/build-styles/reset2.css --watch
+
+npx tailwindcss -i ./src/tailwind/src-styles/dashboard.css -o ./src/tailwind/build-styles/dashboard.css --watch
+
+npx tailwindcss -i ./src/tailwind/src-styles/test-end.css -o ./src/tailwind/build-styles/test-end.css --watch
+
+npx tailwindcss -i ./src/tailwind/src-styles/test-pg.css -o ./src/tailwind/build-styles/test-pg.css --watch

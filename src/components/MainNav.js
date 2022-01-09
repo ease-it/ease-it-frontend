@@ -16,7 +16,7 @@ const MainNav = () => {
                         <li><a href='/'>ABOUT US</a></li>
                         <li><a href='/'>DASHBOARD</a></li>
                         <li><a href='/'>RESOURCES</a></li>
-                        <li><a href='/'>NEWS & EVENT</a></li>
+                        <li><a href='/NewsEvent'>NEWS & EVENT</a></li>
                         <li><a href='/'>SEARCH </a></li>
                     </ul>
                 </div>

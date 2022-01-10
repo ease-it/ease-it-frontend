@@ -20,7 +20,8 @@
 }
 
 body{
-    @apply box-border font-monteserrat text-clr-2  bg-clr-5 overflow-x-hidden;
+    @apply box-border font-monteserrat text-clr-2  bg-clr-5 ;
+    /*  overflow-x-hidden */
 }
 .wrapper{
     @apply flex flex-col 
@@ -42,7 +43,7 @@ header{
     xsm:justify-evenly m-3
     smx:justify-between
     sm:mx-4 
-    2sm:mx-8 2sm:p-2 2sm:m-0
+    2sm:mx-8 2sm:p-2
     4md:col-start-2 4md:col-end-13 4md:mx-0 1md:pl-0;
 }
 /* Button */
@@ -184,11 +185,14 @@ input[type="radio"]{
     @apply ml-4;
 }
 .test-btn-wrapper{
-    @apply flex mt-10 font-monteserrat;
+    @apply flex flex-col mt-10
+    md:flex-row;
 }
 .test-btn{
-    @apply bg-clr-2 rounded-xl text-white text-xs px-6 py-2 m-2 tracking-wider drop-shadow-lg
-    2sm:font-bold 2sm:text-sm
+    @apply  bg-clr-2 text-white tracking-wider drop-shadow-lg rounded 
+    xsm:text-xs xsm:font-medium
+    smx:w-52 smx:px-0 smx:py-0 smx:-ml-3 
+    sm:w-max sm:px-6 sm:py-2 sm:rounded-xl
     2sm:px-8 2sm:mr-6 2sm:rounded-2xl;
 }
 .skip{

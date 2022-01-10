@@ -1,10 +1,11 @@
 module.exports = {
   mode: 'jit',
   content: ['./src/**/*.{js,jsx,ts,html}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     screens:{//customised screens
       'xsm':'200px',
+      'smx': '280px',
       'sm':'320px',
       '2sm':'450px',
       '3sm':'550px',

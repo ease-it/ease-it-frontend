@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100;0,400;1,200;1,300&display=swap');
-
-/*
-! tailwindcss v3.0.11 | MIT License | https://tailwindcss.com
-=======
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,700&display=swap');
 
 /*
 ! tailwindcss v3.0.12 | MIT License | https://tailwindcss.com
->>>>>>> d11ddda07c801dd40e2d83e9e5471dacf9249b84
 */
 
 /*
@@ -25,11 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-<<<<<<< HEAD
-  border-color: currentColor;
-=======
   border-color: #e5e7eb;
->>>>>>> d11ddda07c801dd40e2d83e9e5471dacf9249b84
   /* 2 */
 }
 
@@ -435,8 +424,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-<<<<<<< HEAD
-=======
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -482,38 +469,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
->>>>>>> d11ddda07c801dd40e2d83e9e5471dacf9249b84
 .mt-2{
   margin-top: 0.5rem;
 }
 
-<<<<<<< HEAD
-=======
 .mr-1{
   margin-right: 0.25rem;
 }
 
->>>>>>> d11ddda07c801dd40e2d83e9e5471dacf9249b84
 .text-9xl{
   font-size: 8rem;
   line-height: 1;
 }
 
-<<<<<<< HEAD
-/* Reset Page 1 Styles */
-=======
 .icontxt{
   font-size: .575rem !important
 }
 
 body{
   box-sizing: border-box;
-  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 253 / var(--tw-bg-opacity));
   font-family: Montserrat, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(22 24 89 / var(--tw-text-opacity));
+  /*  overflow-x-hidden */
 }
 
 .wrapper{
@@ -592,10 +572,6 @@ header{
 }
 
 @media (min-width: 450px){
-  .blue-nav{
-    margin: 0px;
-  }
-
   .blue-nav{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -1344,26 +1320,77 @@ input[type="radio"]:checked{
 .test-btn-wrapper{
   margin-top: 2.5rem;
   display: flex;
-  font-family: Montserrat, sans-serif;
+  flex-direction: column;
+}
+
+@media (min-width: 640px){
+  .test-btn-wrapper{
+    flex-direction: row;
+  }
 }
 
 .test-btn{
-  margin: 0.5rem;
-  border-radius: 0.75rem;
+  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(22 24 89 / var(--tw-bg-opacity));
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
   letter-spacing: 0.05em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 200px){
+  .test-btn{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .test-btn{
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 280px){
+  .test-btn{
+    margin-left: -0.75rem;
+  }
+
+  .test-btn{
+    width: 13rem;
+  }
+
+  .test-btn{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .test-btn{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 320px){
+  .test-btn{
+    width: -webkit-max-content;
+    width: max-content;
+  }
+
+  .test-btn{
+    border-radius: 0.75rem;
+  }
+
+  .test-btn{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .test-btn{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (min-width: 450px){
@@ -1379,15 +1406,6 @@ input[type="radio"]:checked{
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-  .test-btn{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .test-btn{
-    font-weight: 700;
-  }
 }
 
 .skip{
@@ -1396,4 +1414,3 @@ input[type="radio"]:checked{
   --tw-text-opacity: 1;
   color: rgb(22 24 89 / var(--tw-text-opacity));
 }
->>>>>>> d11ddda07c801dd40e2d83e9e5471dacf9249b84

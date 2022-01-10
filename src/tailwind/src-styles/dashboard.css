@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .grid-rows-2{
+        grid-template-rows: repeat(4, minmax(0px, max-content));
+    }
+    .grid-rows_3{
+        grid-template-rows: repeat(3, minmax(20px, max-content));
+    }
+    .grid-rows_4{
+        grid-template-rows: repeat(4, minmax(20px, max-content));
+    }
+    .icontxt{
+        font-size: .575rem !important
+    }
+}
+
+
+body{
+    @apply box-border font-monteserrat overflow-x-hidden bg-clr-5;
+}
+.wrapper{
+    @apply grid grid-cols-12;
+}
+/* --------------------------------------------------- */
+
+/* Header */
+
+/* Header Blue */
+header{
+    @apply col-span-12 grid grid-cols-12 bg-clr-3 pl-10 py-1; 
+}
+.blue-nav{
+    @apply col-start-2 col-end-12 flex justify-between;
+}
+/* Button */
+.btn{
+    @apply bg-clr-4 rounded-xl drop-shadow-lg m-2 p-4 py-2 text-white tracking-wider;
+}
+/* Header Blue Links*/
+.header-links-wrapper{
+    @apply self-center flex font-black text-clr-2;
+    /* border-clr-4 border-2 */
+}
+.header-links{
+    @apply ml-4;
+}
+/* Header White */
+nav{
+    @apply grid grid-cols-12 col-span-12 bg-white drop-shadow-lg;
+}
+.white-nav{
+    @apply col-start-2 col-end-13 flex justify-between;
+}
+/* Logo */
+.header-img{
+    @apply col-span-1 col-start-2 h-16;
+}
+/* Links */
+.nav-links{
+    @apply col-start-4 col-end-13 flex self-center uppercase;
+}
+.list-wrapper{
+    @apply col-start-4 col-end-12 flex justify-items-center;
+}
+.nav-listItem{
+    @apply self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs;
+}
+.icon{
+    @apply self-center text-clr-2 font-semibold text-center p-1 bg-clr-3 rounded-3xl; 
+}
+/* Navbar Button */
+.nav-btn{
+    @apply self-center bg-clr-4 rounded-2xl shadow-lg text-white text-xs tracking-wider p-2 mr-4 ;
+}
+/* Header End */
+
+/* ---------------------------------------- */
+main{
+    @apply col-start-2 col-end-12 grid grid-cols-12 gap-x-10 gap-y-0 mt-8 mb-4;
+    /* grid-rows_4 */
+}
+
+/* Dashboard Side-bar */
+.side-bar{
+    @apply col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2;
+}
+/* Heading */
+h1{
+   @apply text-clr-2 font-serif_display text-2xl pb-2 tracking-wider;
+}
+/* Yellow Container */
+.links-wrapper{
+    @apply bg-clr-4 row-start-2 row-end-3 h-screen border-2 border-black/40 drop-shadow-lg;
+}
+/* Ul Container*/
+.side-barLinks{
+    @apply flex flex-col justify-evenly p-2;
+}
+/* Li Container */
+.side-listItem{
+    @apply flex font-serif_display text-clr-2 py-3 text-left;
+}
+/* Icon Container */
+.side-icons{
+    @apply w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center;
+}
+/* Icon Tag */
+.icons{
+    @apply  self-center;
+}
+/* Tutorial and Profile Icon */
+.icon1{
+    @apply bg-clr-3 p-1 rounded-3xl;
+}
+/* Log Out Icon */
+.fa-sign-out{
+    @apply text-clr-4 font-semibold text-center p-1 bg-clr-4 rounded-3xl; 
+}
+/* Side-bar Anchor Text*/
+.side-anchor{
+    @apply text-white ml-6 font-thin;
+}
+/* Dashboard Sidebar End */
+
+/* ------------------------------- */
+
+/* Video Container */
+.tutorial-vid{
+    @apply col-start-5 col-end-13 row-start-2 row-end-3 flex flex-col pt-14 ml-10;
+}
+h3{
+    @apply font-serif_display tracking-wider font-extralight pb-2;
+}
+/* Video Container End*/
+
+/* -------------------------------- */
+
+/* Tutorial Summary Container */
+.tutorial-summary{
+    @apply col-start-5 col-end-13 row-start-3 row-end-5 flex flex-col border-l-2 border-clr-1 rounded-sm;
+}
+.content-wrapper{
+    @apply ml-10; 
+    /* grid grid-cols-1 grid-rows_3 gap-y-6; */
+}
+.summary-content{
+    @apply bg-clr-3 rounded-2xl p-2 h-max p-4 mb-8 flex flex-col justify-between;
+}
+h4{
+    @apply font-serif_display text-sm tracking-wider;
+}
+.summary-p{
+    @apply text-xs my-2;
+}
+.summary-btn{
+    @apply bg-clr-4 rounded-lg drop-shadow-lg p-2 py-1 text-white text-xs tracking-wider self-end;
+}
+/* Tutorial Container End */
+/* --------------------------------- */
+
+/* Community Section */
+
+/* Community Section Wrapper */
+.com-sect{
+    @apply col-start-1 col-end-13 bg-[url('../newsletter.svg')] bg-center bg-no-repeat bg-cover h-80 text-white font-serif_display;
+}
+/* Transparent Wrapper */
+.opaque-wrapper{
+    @apply w-full h-full bg-clr-2/20 flex flex-col justify-between items-center p-6;
+}
+.community-p{
+    @apply mt-10 text-center text-xl tracking-wider;
+}
+.community-btn{
+    @apply mb-8 bg-clr-4 rounded-3xl drop-shadow-lg m-2 px-6 py-2 font-monteserrat font-semibold text-white tracking-widest;
+}
+/* Back to Top */
+.to-top{
+    @apply self-end flex flex-col justify-between items-center font-monteserrat text-sm;
+}
+.material-icons{
+    @apply p-1 bg-[#f6f6f6] text-center text-clr-2 font-black self-center rounded-3xl;
+}
+/* Community Section End*/
+/* ----------------------------------- */
+
+/* Footer Section */
+/* Footer Wrapper */
+footer{
+    @apply col-start-1 col-end-13;
+}
+
+/* Subscribe and Download Section */
+.subscribe{
+    @apply bg-clr-2 text-white text-sm flex justify-between p-4 px-6;
+}
+/* Download button */
+.download{
+    @apply flex self-center bg-clr-5 font-semibold text-black text-center p-1 px-4 shadow-xl;
+}
+/* Playstore Image */
+.store-img{ 
+    @apply text-white h-5 w-5 ml-2;
+}
+/* Newsletter Subscription */
+.newsletter{
+    @apply flex justify-between;
+}
+.sub-input{
+    @apply w-full outline-none p-1 pl-2 text-black w-80 mt-1;
+}
+.letter-button{
+    @apply bg-clr-4 rounded drop-shadow-lg mx-2 px-2 py-1 text-white tracking-wider;
+}
+/* Footer Links */
+
+/* Site Info Wrapper*/
+.site-info{
+    @apply flex flex-col bg-clr-3 p-4;
+}
+/* Footer Links Wrapper */
+.footer-links{
+    @apply flex px-8 py-4;
+}
+/* Contact */
+.contact{
+    @apply flex flex-col justify-evenly ml-10 mr-20;
+}
+.footer-img{
+    @apply w-1/2;
+}
+.ph-numbers{
+    @apply ml-4 my-2 text-sm tracking-wider;
+}
+/* Contact End*/
+
+/* Social Media */
+.socials{
+    @apply ml-4 text-sm flex flex-col;
+}
+.socials p{
+    @apply text-xs
+}
+.social-handles{
+    @apply w-full flex justify-between mt-1;
+}
+.icon2{
+    @apply h-4 w-4 text-clr-3 bg-clr-2 text-center 
+    text-xs rounded-3xl self-center;
+}
+.icon4{
+    @apply h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl border border-clr-2; 
+}
+.icon3{
+    @apply h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl;
+}
+/* Social Media End*/
+
+/* Footer Links End*/
+
+/* Quicklinks */
+.quicklinks{
+    @apply flex flex-col m-6 text-sm;
+}
+.links-group-wrapper{
+    @apply flex self-center w-full h-full;
+}
+.links-group{
+    @apply flex flex-col justify-evenly mr-10 text-xs font-medium text-clr-2 tracking-wider;
+}
+.links-group a{
+    @apply hover:text-clr-2/80 mt-4;
+}
+h5{
+    @apply text-clr-2 font-extrabold text-sm tracking-wider;
+}
+.legal{
+    @apply mt-5 self-center text-sm italic text-clr-4 font-[600] tracking-wider;
+}
+/* Quicklinks End */
+/* Footer Section End*/
+/* --------------------------------------------------- */

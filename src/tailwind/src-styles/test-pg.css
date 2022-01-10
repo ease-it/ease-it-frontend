@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100;0,400;1,200;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset Page 1 Styles */
+@layer utilities{  
+    .reset-card{
+        width: 600px;
+        height: 350px;
+    }
+    .reset-card2{
+        width: 560px;
+        height: 360px;
+    }
+    .logo-img{
+        height:60px;
+    }
+    .logo-img2{
+        height:70px;
+    } 
+}

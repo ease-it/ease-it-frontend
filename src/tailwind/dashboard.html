@@ -1,170 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./build-styles/dashboard.css">
-    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://use.fontawesome.com/4eb13de17a.js"></script>
     <title>ease-it</title>
 </head>
+
 <body class="box-border font-monteserrat overflow-x-hidden bg-clr-5">
-    <div class="wrapper grid grid-cols-12">
-        <header class= "col-span-12 grid grid-cols-12 bg-clr-3 pl-10 py-1" >
-            <div class="blue-nav col-start-2 col-end-12 flex justify-between ">
-                <button class="btn bg-clr-4 rounded-xl drop-shadow-lg m-2 p-4 py-2 text-white tracking-wider">Country/Region ⌵</button>
-                <div class="header-links-wrapperself-center flex font-black text-clr-2 ">
-                    <a class="header-links ml-4 " href="#">Support</a>
-                    <a class="header-links ml-4 " href="#">Contact Us</a>
+    <div class="grid grid-cols-12">
+        <header class="col-span-12 grid grid-cols-12 bg-clr-3 pl-10 py-1">
+            <div class="col-start-2 col-end-12 flex justify-between ">
+                <button
+                    class=" bg-clr-4 rounded-xl drop-shadow-lg m-2 p-4 py-2 text-white tracking-wider">Country/Region
+                    ⌵</button>
+                <div class="self-center flex font-black text-clr-2 ">
+                    <a class=" ml-4 " href="#">Support</a>
+                    <a class=" ml-4 " href="#">Contact Us</a>
                 </div>
             </div>
         </header>
         <nav class="grid grid-cols-12 col-span-12 bg-white drop-shadow-lg">
-            <div class="white-nav col-start-2 col-end-13 flex justify-between "> 
-                <img class="header-img col-span-1 col-start-2 h-16 " src="./ease-it 1.jpg" alt="ease-it logo"> 
-                <div class="nav-links col-start-4 col-end-13 flex self-center uppercase">
-                    <ul class="list-wrapper col-start-4 col-end-12 flex justify-items-center">
-                        <li class="nav-listItem self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs "><a href="#">Home</li></a>
-                        <li class="nav-listItem self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs "><a href="#">About Us</li></a>
-                        <li class="nav-listItem selfself-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs"><a href="#">Dashboard</li></a>
-                        <li class="nav-listItem self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs"><a href="#">Resources</li></a>
-                        <li class="nav-listItem self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs "><a href="#">News & Events</li></a>
-                        <li class="nav-listItem self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs"><a href="#">Search <i class="fa fa-search icon" aria-hidden="true"></i></li></a>
+            <div class="col-start-2 col-end-13 flex justify-between ">
+                <img class=" col-span-1 col-start-2 h-16 " src="./ease-it 1.jpg" alt="ease-it logo">
+                <div class=" col-start-4 col-end-13 flex self-center uppercase">
+                    <ul class="col-start-4 col-end-12 flex justify-items-center">
+                        <li
+                            class="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs ">
+                            <a href="#">Home</li></a>
+                        <li
+                            class="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs ">
+                            <a href="#">About Us</li></a>
+                        <li
+                            class="selfself-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                            <a href="#">Dashboard</li></a>
+                        <li
+                            class="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                            <a href="#">Resources</li></a>
+                        <li
+                            class="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs ">
+                            <a href="#">News & Events</li></a>
+                        <li
+                            class="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                            <a href="#">Search <i class="fa fa-search icon" aria-hidden="true"></i></li></a>
                     </ul>
-                    <button class="nav-btn self-center bg-clr-4 rounded-2xl shadow-lg text-white text-xs tracking-wider p-2 mr-4">Signup?Login</button>
+                    <button
+                        class="self-center bg-clr-4 rounded-2xl shadow-lg text-white text-xs tracking-wider p-2 mr-4">Signup?Login</button>
                 </div>
             </div>
         </nav>
         <main class="col-start-2 col-end-12 grid grid-cols-12 gap-x-10 gap-y-0 mt-8 mb-4">
-            <section class="side-bar col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2">
+            <section class="col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2">
                 <h1 class="col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2">Dashboard</h1>
-                <div class="links-wrapper col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2">
-                    <ul class="side-barLinks flex flex-col justify-evenly p-2">
-                        <li class="side-listItem" >
-                            <span class="side-icons w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center "><i class="fa icons fa-address-book" aria-hidden="true"></i></span>
-                            <a class="side-anchor" class="side-anchor" href="#">Take a Quiz</a>
+                <div class=" col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2">
+                    <ul class="flex flex-col justify-evenly p-2">
+                        <li class="flex font-serif_display text-clr-2 py-3 text-left">
+                            <span
+                                class="w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center "><i
+                                    class="fa self-center fa-address-book" aria-hidden="true"></i></span>
+                            <a class="ml-6 font-thin" href="#">Take a Quiz</a>
                         </li>
-                        <li class="side-listItem">
-                            <span class="side-icons"><i class="fa fa-check icons" aria-hidden="true"></i></span>
-                            <a class="side-anchor" href="#">Attendance</a>
+                        <li class="flex font-serif_display text-clr-2 py-3 text-left">
+                            <span
+                                class="w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center"><i
+                                    class="fa fa-check self-center" aria-hidden="true"></i>
+                            </span>
+                            <a class="ml-6 font-thin" href="#">Attendance</a>
                         </li>
-                        <li class="side-listItem">
-                            <span class="side-icons"><i class="fa fa-play icons icon1 icontxt" aria-hidden="true"></i></span>
-                            <a class="side-anchor" href="#">Tutorials</a>
+                        <li class="flex font-serif_display text-clr-2 py-3 text-left">
+                            <span
+                                class="w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center"><i
+                                    class="fa fa-play self-center bg-clr-3 p-1 rounded-3xl icontxt"
+                                    aria-hidden="true"></i></span>
+                            <a class="ml-6 font-thin" href="#">Tutorials</a>
                         </li>
-                        <li class="side-listItem">
-                            <span class="side-icons"><i class="fa fa-pencil-square-o icons" aria-hidden="true"></i></span>
-                            <a class="side-anchor" href="#">Assignment</a>
+                        <li class="flex font-serif_display text-clr-2 py-3 text-left">
+                            <span
+                                class="w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center"><i
+                                    class="fa fa-pencil-square-o self-center" aria-hidden="true"></i></span>
+                            <a class="ml-6 font-thin" href="#">Assignment</a>
                         </li>
-                        <li class="side-listItem">
-                            <span class="side-icons"><i class="fa fa-user-o icons icon1 bg-clr-3 p-1 rounded-3xl" aria-hidden="true"></i></span>
-                            <a class="side-anchor" href="#">Profile</a>
+                        <li class="flex font-serif_display text-clr-2 py-3 text-left">
+                            <span
+                                class="w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center"><i
+                                    class="fa fa-user-o icons icon1 bg-clr-3 p-1 rounded-3xl"
+                                    aria-hidden="true"></i></span>
+                            <a class="ml-6 font-thin" href="#">Profile</a>
                         </li>
-                        <li class="side-listItem">
-                            <span class="side-icons"><i class="fa fa-address-book icons self-center" aria-hidden="true"></i></span>
-                            <a class="side-anchor" href="#">Results</a>
+                        <li class="flex font-serif_display text-clr-2 py-3 text-left">
+                            <span
+                                class="w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center"><i
+                                    class="fa fa-address-book icons self-center" aria-hidden="true"></i></span>
+                            <a class="ml-6 font-thin" href="#">Results</a>
                         </li>
-                        <li class="side-listItem">
-                            <span class="side-icons"><i class="fa fa-sign-out icons text-clr-4 font-semibold text-center p-1 bg-clr-4 rounded-3xl" aria-hidden="true"></i></span>
-                            <a class="side-anchor text-white ml-6 font-thin " href="#">Log out</a>
+                        <li class="flex font-serif_display text-clr-2 py-3 text-left">
+                            <span
+                                class="w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center"><i
+                                    class="fa fa-sign-out icons text-clr-4 font-semibold text-center p-1 bg-clr-4 rounded-3xl"
+                                    aria-hidden="true"></i></span>
+                            <a class="ml-6 font-thin text-white ml-6 font-thin " href="#">Log out</a>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="tutorial-vid col-start-5 col-end-13 row-start-2 row-end-3 flex flex-col pt-14 ml-10">
+            <section class="col-start-5 col-end-13 row-start-2 row-end-3 flex flex-col pt-14 ml-10">
                 <h3 class="font-serif_display tracking-wider font-extralight pb-2"></h3>torials</h3>
                 <video controls poster="video.svg">
                     <source src="#" type="video/mp4">
                 </video>
             </section>
-            <section class="tutorial-summary col-start-5 col-end-13 row-start-3 row-end-5 flex flex-col border-l-2 border-clr-1 rounded-sm">
-                <div class="content-wrapper ml-10">
-                    <div class="summary-content">
-                        <h4>Tutorials 1</h4>
-                        <p class="summary-p">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p> 
+            <section
+                class=" col-start-5 col-end-13 row-start-3 row-end-5 flex flex-col border-l-2 border-clr-1 rounded-sm">
+                <div class=" ml-10">
+                    <div class="bg-clr-3 rounded-2xl p-2 h-max p-4 mb-8 flex flex-col justify-between">
+                        <h4 class="font-serif_display text-sm tracking-wider">Tutorials 1</h4>
+                        <p class="text-xs my-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                         <button class="summary-btn">Learn More</button>
                     </div>
-                    <div class="summary-content bg-clr-3 rounded-2xl p-2 h-max p-4 mb-8 flex flex-col justify-between">
+                    <div
+                        class="bg-clr-3 rounded-2xl p-2 h-max p-4 mb-8 flex flex-col justify-between bg-clr-3 rounded-2xl p-2 h-max p-4 mb-8 flex flex-col justify-between">
                         <h4 class="font-serif_display text-sm tracking-wider">Tutorials 2</h4>
-                        <p class="summary-p text-xs my-2 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p> 
-                        <button class="summary-btn bg-clr-4 rounded-lg drop-shadow-lg p-2 py-1 text-white text-xs tracking-wider self-end">Learn More</button>
+                        <p class="text-xs my-2 text-xs my-2 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <button
+                            class="bg-clr-4 rounded-lg drop-shadow-lg p-2 py-1 text-white text-xs tracking-wider self-end">Learn
+                            More</button>
                     </div>
                 </div>
             </section>
         </main>
-        <section class="com-sect col-start-1 col-end-13 bg-[url('../newsletter.svg')] bg-center bg-no-repeat bg-cover h-80 text-white font-serif_display">
-            <div class="opaque-wrapper w-full h-full bg-clr-2/20 flex flex-col justify-between items-center p-6">
-                <p class="community-p mt-10 text-center text-xl tracking-wider">Join our community of Ease-it users.<br>With us, you can only get better. </p>
-                <button class="community-btn mb-8 bg-clr-4 rounded-3xl drop-shadow-lg m-2 px-6 py-2 font-monteserrat font-semibold text-white tracking-widest">Get Started</button>
-                <div class="to-top self-end flex flex-col justify-between items-center font-monteserrat text-sm">
-                    <span class="arrow"><i class="material-icons p-1 bg-[#f6f6f6] text-center text-clr-2 font-black self-center rounded-3xl">north
-                    </i></span>
+        <section
+            class="col-start-1 col-end-13 bg-[url('../newsletter.svg')] bg-center bg-no-repeat bg-cover h-80 text-white font-serif_display">
+            <div class="w-full h-full bg-clr-2/20 flex flex-col justify-between items-center p-6">
+                <p class=" mt-10 text-center text-xl tracking-wider">Join our community of Ease-it
+                    users.<br>With us, you can only get better. </p>
+                <button
+                    class=" mb-8 bg-clr-4 rounded-3xl drop-shadow-lg m-2 px-6 py-2 font-monteserrat font-semibold text-white tracking-widest">Get
+                    Started</button>
+                <div class="self-end flex flex-col justify-between items-center font-monteserrat text-sm">
+                    <span class="arrow"><i
+                            class="p-1 bg-[#f6f6f6] text-center text-clr-2 font-black self-center rounded-3xl">north
+                        </i></span>
                     <a href="">Back to top</a>
                 </div>
             </div>
         </section>
-        <footer class="col-start-1 col-end-13" >
-            <div class="subscribe bg-clr-2 text-white text-sm flex justify-between p-4 px-6 ">
-               <a class="download flex self-center bg-clr-5 font-semibold text-black text-center p-1 px-4 shadow-xl" href="#">Download Mobile App    
-                   <span class="store-img text-white h-5 w-5 ml-2"><img src="./playstore.png" alt="google playstore icon"></span>
+        <footer class="col-start-1 col-end-13">
+            <div class=" bg-clr-2 text-white text-sm flex justify-between p-4 px-6 ">
+                <a class=" flex self-center bg-clr-5 font-semibold text-black text-center p-1 px-4 shadow-xl"
+                    href="#">Download Mobile App
+                    <span class=" text-white h-5 w-5 ml-2"><img src="./playstore.png"
+                            alt="google playstore icon"></span>
                 </a>
-               <form class="newsletter flex justify-between">
-                   <div class="letter-sub">
-                       <p>Subscribe to our newsletter</p>
-                       <input class="sub-input w-full outline-none p-1 pl-2 text-black w-80 mt-1" type="email" name="email">
-                       <input class="letter-button bg-clr-4 rounded drop-shadow-lg mx-2 px-2 py-1 text-white tracking-wider" type="button" name="button" value="Subscribe">
-                   </div>
-                   
-                </form> 
+                <form class=" flex justify-between">
+                    <div class="letter-sub">
+                        <p>Subscribe to our newsletter</p>
+                        <input class="w-full outline-none p-1 pl-2 text-black w-80 mt-1" type="email" name="email">
+                        <input class="bg-clr-4 rounded drop-shadow-lg mx-2 px-2 py-1 text-white tracking-wider"
+                            type="button" name="button" value="Subscribe">
+                    </div>
+
+                </form>
             </div>
-            <div class="site-info flex flex-col bg-clr-3 p-4 ">
-               <div class="footer-links flex px-8 py-4">
-                    <div class="contact flex flex-col justify-evenly ml-10 mr-20">
-                        <img class="footer-img w-1/2" src="./ease-it 1.svg" alt="ease-it logo">
-                        <div class="ph-numbers ml-4 my-2 text-sm tracking-wider">
+            <div class="flex flex-col bg-clr-3 p-4 ">
+                <div class="flex px-8 py-4">
+                    <div class="flex flex-col justify-evenly ml-10 mr-20">
+                        <img class=" w-1/2" src="./ease-it 1.svg" alt="ease-it logo">
+                        <div class=" ml-4 my-2 text-sm tracking-wider">
                             <p>easeit.edu.ng</p>
                             <p>+234 70 2000 0000</p>
                             <p>+234 70 3000 0000</p>
                         </div>
-                        <div class="socials ml-4 text-sm flex flex-col">
+                        <div class="ml-4 text-sm flex flex-col">
                             <p class="text-xs">Follow us on Social Media</p>
-                            <div class="social-handles w-full flex justify-between mt-1">
-                                <span class="icon2 h-4 w-4 text-clr-3 bg-clr-2 text-center 
-                                text-xs rounded-3xl self-center"><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                                <span class="icon3 h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl"><img src="./instagram.svg" alt="instagram logo"></span>
-                                <span class="icon2 h-4 w-4 text-clr-3 bg-clr-2 text-center 
-                                text-xs rounded-3xl self-center"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                                <span class="icon2 h-4 w-4 text-clr-3 bg-clr-2 text-center 
-                                text-xs rounded-3xl self-center"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                                <span class="icon4 h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl border border-clr-2"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="quicklinks flex flex-col m-6 text-sm">
-                        <h5 class="text-clr-2 font-extrabold text-sm tracking-wider">Quicklinks</h5>
-                        <div class="links-group-wrapper flex self-center w-full h-full ">
-                            <div class="links-group flex flex-col justify-evenly mr-10 text-xs font-medium text-clr-2 tracking-wider">
-                                <a href="#">About</a>
-                                <a href="#">Guidelines</a>
-                                <a href="#">Community</a>
-                            </div>
-                            <div class="links-group hover:text-clr-2/80 mt-4 ">
-                                <a href="#">Resources</a>
-                                <a href="#">What's New</a>
-                                <a href="#">Privacy</a>
-                            </div>
-                            <div class="links-group hover:text-clr-2/80 mt-4">
-                                <a href="#">FAQs</a>
-                                <a href="#">Contact Us</a>
-                                <a href="#">Become a Partner</a>
+                            <div class="w-full flex justify-between mt-1">
+                                <span class="h-4 w-4 text-clr-3 bg-clr-2 text-center 
+                                text-xs rounded-3xl self-center"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></span>
+                                <span
+                                    class="h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl"><img
+                                        src="./instagram.svg" alt="instagram logo"></span>
+                                <span class=" h-4 w-4 text-clr-3 bg-clr-2 text-center 
+                                text-xs rounded-3xl self-center"><i class="fa fa-linkedin"
+                                        aria-hidden="true"></i></span>
+                                <span class=" h-4 w-4 text-clr-3 bg-clr-2 text-center 
+                                text-xs rounded-3xl self-center"><i class="fa fa-twitter"
+                                        aria-hidden="true"></i></span>
+                                <span
+                                    class=" h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl border border-clr-2"><i
+                                        class="fa fa-youtube-play" aria-hidden="true"></i></span>
                             </div>
                         </div>
                     </div>
-               </div> 
-               <p class="legal mt-5 self-center text-sm italic text-clr-4 font-[600] tracking-wider">All rights reserved. Team 9 Sidehustle Boot Camp 4.0</p>
+                    <div class=" flex flex-col m-6 text-sm">
+                        <h5 class="text-clr-2 font-extrabold text-sm tracking-wider">Quicklinks</h5>
+                        <div class=" flex self-center w-full h-full ">
+                            <div
+                                class="flex flex-col justify-evenly mr-10 text-xs font-medium text-clr-2 tracking-wider">
+                                <a href="#" class="hover:text-clr-2/80 mt-4">About</a>
+                                <a href="#" class="hover:text-clr-2/80 mt-4">Guidelines</a>
+                                <a href="#" class="hover:text-clr-2/80 mt-4">Community</a>
+                            </div>
+                            <div class="hover:text-clr-2/80 mt-4 ">
+                                <a href="#" class="hover:text-clr-2/80 mt-4">Resources</a>
+                                <a href="#" class="hover:text-clr-2/80 mt-4">What's New</a>
+                                <a href="#" class="hover:text-clr-2/80 mt-4">Privacy</a>
+                            </div>
+                            <div class="hover:text-clr-2/80 mt-4">
+                                <a href="#" class="hover:text-clr-2/80 mt-4">FAQs</a>
+                                <a href="#" class="hover:text-clr-2/80 mt-4">Contact Us</a>
+                                <a href="#" class="hover:text-clr-2/80 mt-4">Become a Partner</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-5 self-center text-sm italic text-clr-4 font-[600] tracking-wider">All rights
+                    reserved. Team 9 Sidehustle Boot Camp 4.0</p>
             </div>
         </footer>
-   </div> 
+    </div>
 </body>
+
 </html>

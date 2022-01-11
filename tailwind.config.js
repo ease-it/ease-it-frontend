@@ -38,8 +38,6 @@ module.exports = {
       },
       backgroundImage:{
         'bg1': "url('./src/tailwind/newsletter.svg')"
-      //   'bg2': "url('./images/bg-2.jpg')",
-      //   'bg3': "url('./images/bg-3.jpg')"
       }
     }
   },

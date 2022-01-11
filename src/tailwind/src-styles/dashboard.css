@@ -24,75 +24,139 @@ body{
     @apply box-border font-monteserrat overflow-x-hidden bg-clr-5;
 }
 .wrapper{
-    @apply grid grid-cols-12;
+    @apply flex flex-col 
+    4md:grid 4md:grid-cols-12;
 }
+
 /* --------------------------------------------------- */
+
 
 /* Header */
 
 /* Header Blue */
 header{
-    @apply col-span-12 grid grid-cols-12 bg-clr-3 pl-10 py-1; 
+    @apply bg-clr-3 
+    1md:pl-10 1md:pr-3
+    4md:pl-8 4md:col-span-12 4md:grid 4md:grid-cols-12
+    xl:pl-0
+    2xl:pl-0;  
 }
 .blue-nav{
-    @apply col-start-2 col-end-12 flex justify-between;
+    @apply flex justify-between m-2 
+    xsm:justify-evenly m-3
+    smx:justify-between
+    sm:mx-4 
+    2sm:mx-8 2sm:p-2 2sm:m-0
+    1md:pl-0 1md:ml-6
+    4md:col-start-2 4md:col-end-13 4md:mx-0
+    xl:mx-6;
 }
 /* Button */
 .btn{
-    @apply bg-clr-4 rounded-xl drop-shadow-lg m-2 p-4 py-2 text-white tracking-wider;
-}
+    @apply bg-clr-4 rounded-md drop-shadow-lg m-1 p-1 text-white text-xs tracking-wider
+    sm:text-xs sm:p-2
+    1md:px-1 1md:py-1 1md:tracking-widest 1md:ml-0 1md:text-base
+    4md:rounded-xl 4md:p-2;
+} 
 /* Header Blue Links*/
 .header-links-wrapper{
-    @apply self-center flex font-black text-clr-2;
-    /* border-clr-4 border-2 */
+    @apply self-center flex font-semibold text-clr-2 text-xs 
+    xsm:flex-col text-right
+    sm:flex-row text-center tracking-wider
+    2sm:text-sm 
+    1md:text-base
+    4md:mr-4;
 }
 .header-links{
-    @apply ml-4;
+    @apply mr-0
+    smx:mr-2
+    1md:ml-4;
 }
 /* Header White */
 nav{
-    @apply grid grid-cols-12 col-span-12 bg-white drop-shadow-lg;
+    @apply flex justify-between bg-white drop-shadow-xl p-3 
+    2sm:px-10
+    1md:drop-shadow-lg 1md:pl-14 1md:pr-10
+    4md:grid 4md:grid-cols-12 4md:col-span-12 4md:pr-8;
+    
 }
 .white-nav{
-    @apply col-start-2 col-end-13 flex justify-between;
+    @apply  flex justify-between
+    1md:mx-6 1md:ml-0 1md:mr-12
+    2md:ml-2
+    4md:col-start-1 4md:col-end-13 4md:mx-4 4md:ml-10 4md:mr-0
+    xl:mx-8;
 }
 /* Logo */
 .header-img{
-    @apply col-span-1 col-start-2 h-16;
+    @apply h-14 self-center
+    4md:col-start-2 4md:col-end-3
+    xl:mx-2
+    2xl:mx-10
+    3xl:mx-14
+    4xl:ml-36;
 }
 /* Links */
 .nav-links{
-    @apply col-start-4 col-end-13 flex self-center uppercase;
+    @apply self-center uppercase 
+    4md:col-start-4 4md:col-end-13; 
 }
 .list-wrapper{
-    @apply col-start-4 col-end-12 flex justify-items-center;
+    @apply absolute flex flex-col items-center top-20 right-0 bg-white w-full p-1 drop-shadow-lg 
+    xsm:hidden
+    2sm:w-48 2sm:items-end
+    1md:p-0 
+    4md:drop-shadow-none 4md:flex 4md:static 4md:top-0 4md:w-auto 4md:flex-row;
 }
 .nav-listItem{
-    @apply self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs;
+    @apply p-2 px-1 mt-2 text-xs font-bold tracking-wider hover:border-b-4 hover:border-clr-4 hover:-mb-1   
+    2sm:mr-9 2sm:px-2 2sm:tracking-wide 
+    2md:tracking-wider
+    4md:m-0 4md:self-center 4md:p-0 4md:mr-2
+    lg:mr-4;
 }
+
 .icon{
-    @apply self-center text-clr-2 font-semibold text-center p-1 bg-clr-3 rounded-3xl; 
+    @apply self-center text-clr-2 font-medium text-center text-sm p-1 bg-clr-3 rounded-3xl; 
 }
 /* Navbar Button */
 .nav-btn{
-    @apply self-center bg-clr-4 rounded-2xl shadow-lg text-white text-xs tracking-wider p-2 mr-4 ;
+    @apply justify-self-center text-xs text-white text-center bg-clr-4 rounded-xl shadow-lg tracking-wider my-4
+    xsm:p-1 xsm:px-2
+    2sm:mr-9
+    1md:m-1 1md:mr-10
+    4md:mr-0 4md:p-2;
+}
+.menu{
+    @apply self-center flex flex-col justify-evenly bg-none mt-3 mr-3 h-7 w-8 cursor-pointer
+    1md:col-start-11 1md:col-end-12 
+    1md:row-start-1 1md:row-end-2
+    4md:hidden;
+}
+.line{
+    @apply border border-clr-2 rounded-xl;
 }
 /* Header End */
 
 /* ---------------------------------------- */
 main{
-    @apply col-start-2 col-end-12 grid grid-cols-12 gap-x-10 gap-y-0 mt-8 mb-4;
+    @apply flex flex-col items-center mt-10;
+    /* col-start-2 col-end-12 grid grid-cols-12 gap-x-10 gap-y-0 mt-8 mb-4; */
     /* grid-rows_4 */
 }
 
 /* Dashboard Side-bar */
 .side-bar{
-    @apply col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2;
+    @apply flex flex-col w-52 h-96 self-start m-3
+    /* col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2; */
 }
 /* Heading */
 h1{
    @apply text-clr-2 font-serif_display text-2xl pb-2 tracking-wider;
 }
+.dropdown{
+    @apply font-black;
+}  ,mc
 /* Yellow Container */
 .links-wrapper{
     @apply bg-clr-4 row-start-2 row-end-3 h-screen border-2 border-black/40 drop-shadow-lg;

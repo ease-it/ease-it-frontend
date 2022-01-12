@@ -7,7 +7,6 @@ const Dashboard = () => {
         <div>
             <HeaderNav />
             <MainNav />
-            <body className="box-border font-monteserrat overflow-x-hidden bg-clr-5">
                 <div className="grid grid-cols-12">
                     <header className="col-span-12 grid grid-cols-12 bg-clr-3 pl-10 py-1">
                         <div className="col-start-2 col-end-12 flex justify-between">
@@ -145,7 +144,7 @@ const Dashboard = () => {
                         </section>
                     </main>
                     <section
-                        className="col-start-1 col-end-13 bg-[url('../newsletter.svg')] bg-center bg-no-repeat bg-cover h-80 text-white font-serif_display">
+                        className="col-start-1 col-end-13  bg-center bg-no-repeat bg-cover h-80 text-white font-serif_display">
                         <div className="w-full h-full bg-clr-2/20 flex flex-col justify-between items-center p-6">
                             <p className="mt-10 text-center text-xl tracking-wider">Join our community of Ease-it users.<br />With us, you
                                 can only get better. </p>
@@ -240,8 +239,6 @@ const Dashboard = () => {
                         </div>
                     </footer>
                 </div>
-            </body>
-
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import AppLogo from "../ease-it.svg"
 
 const Reset2 = () => {
     return (
@@ -6,7 +7,7 @@ const Reset2 = () => {
             <body className="box-border overflow-x-hidden font-monteserrat text-black bg-clr-5 tracking-wide">
                 <div className="w-full h-full my-0 mx-auto flex flex-col justify-around lg:w-10/12">
                     <img className="mt-8 self-center drop-shadow-lg xsm:logo-img 3sm:logo-img2 3sm:self-start 3sm:w-24 3sm:ml-6 2xl:ml-28 4xl:w-2/4"
-                        src="./ease-it 1.svg" alt="ease-it logo" />
+                        src={AppLogo} alt="ease-it logo" />
                     <main
                         className="flex flex-col justify-center m-6 3sm:mx-14 3sm:my-4 md:self-center md:mx-20 1md:mx-24 2md:mx-32 2md:my-0 2md:self-center 4md:my-0 4md:mx-0 ">
                         <h2
@@ -47,7 +48,7 @@ const Reset2 = () => {
                             </form>
                         </section>
                         <a className="self-center border border-black/50 font-black mt-4 mx-2 p-1 text-center xsm:text-xxs sm:text-xs 2sm:p-2 2sm:px-8 2sm:text-sm 3sm:px-12 xl:py-2 2xl:text-lg"
-                            href="#">Don't have an account?<span className="text-clr-2 font-extrabold 3md:font-black"> Click
+                            href="/">Don't have an account?<span className="text-clr-2 font-extrabold 3md:font-black"> Click
                                 Here</span></a>
                     </main>
                 </div>

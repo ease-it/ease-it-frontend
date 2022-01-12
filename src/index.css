@@ -38,3 +38,21 @@ h1 {
 .primary-color-blue__background {
     background-color: #161859;
 }
+
+.material-icons {
+    font-size: 16px
+}
+
+.material-icons.pt.pl {
+    transform: translateY(5px);
+    padding-left: 10px;
+}
+
+.react-icons {
+    display: flex;
+    color: #161859;
+}
+
+.upNav {
+    transform: translateY(-2px)
+}

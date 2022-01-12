@@ -35,11 +35,6 @@
     cursor: pointer;
 }
 
-.material-icons.pt.pl {
-    padding-top: 5px;
-    padding-left: 10px
-}
-
 #uploadFileFromComputer {
     display: none;
 }

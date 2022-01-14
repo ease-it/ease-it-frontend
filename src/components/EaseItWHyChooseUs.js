@@ -1,11 +1,11 @@
 import React from 'react'
-import WhyChooseUsJpg from '../assets/images/whychooseus1.png'
 
-const EaseItWHyChooseUs = () => {
+
+const EaseItWHyChooseUs = ({ img }) => {
     return (
-        <div className="card flex flex-col  items-center">
+        <div className="flex flex-col items-center">
             <div>
-                <img src={WhyChooseUsJpg} alt='Student with Book'/>
+                <img src={img} alt='Student with Book' />
             </div>
             <div className='text-center'>
                 <div className="card--text__heading primary-color-blue text-2xl"><h2>EASE IT FOR STUDENTS</h2></div>
@@ -20,6 +20,11 @@ const EaseItWHyChooseUs = () => {
                 <button className='primary-color-yellow font-monserrat rounded-md shadow-black shadow-sm px-2 py-1  '>Learn More</button>
             </div>
         </div>
+
+
+
+
+
     )
 }
 

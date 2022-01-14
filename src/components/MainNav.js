@@ -1,29 +1,49 @@
 import React from 'react'
-import logo from '../assets/images/ease-it-logo.png'
+import AppLogo from "../ease-it.svg"
+import {
+    GrSearch
+} from "react-icons/gr"
 const MainNav = () => {
     return (
         <>
-            <div className='flex justify-between gap-y-5 items-center bg-white'>
-                <div className=' md:px-11 relative'>
-                    <img src={logo} alt="ease-it-logo" className="md:top-5 h-14 md:min-w-fit md:left-5"  />
+            <nav className="grid grid-cols-12 col-span-12 bg-white drop-shadow-lg">
+                <div className="col-start-2 col-end-13 flex justify-between">
+                    <img className="col-span-1 col-start-2 h-16" src={AppLogo} alt="ease-it logo" />
+                    <div className="col-start-4 col-end-13 flex self-center uppercase">
+                        <ul className="col-start-4 col-end-12 flex justify-items-center">
+                            <li
+                                className="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                                <a href="/">Home</a>
+                            </li>
+                            <li
+                                className="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                                <a href="/">About Us</a>
+                            </li>
+                            <li
+                                className="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                                <a href="/">Dashboard</a>
+                            </li>
+                            <li
+                                className="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                                <a href="/">Resources</a>
+                            </li>
+                            <li
+                                className="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                                <a href="/">News & Events</a>
+                            </li>
+                            <li
+                                className="self-center mr-4 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
+                                <a href="/" className='search-nav-icon'> Search
+                                    <GrSearch className="react-icons " />
+                                </a>
+                            </li>
+                        </ul>
+                        <button
+                            className="self-center bg-clr-4 rounded-2xl shadow-lg text-white text-xs tracking-wider p-2 mr-4 ">Signup?Login
+                        </button>
+                    </div>
                 </div>
-                <div>
-                    
-                </div>
-                <div className =" text-black items-center hidden  xl:block justify-end">
-                    <ul className='flex font-bold gap-x-6 text-lg items-center primary-color-blue justify-center'>
-                        <li><a href='/'>HOME</a></li>
-                        <li><a href='/'>ABOUT US</a></li>
-                        <li><a href='/'>DASHBOARD</a></li>
-                        <li><a href='/'>RESOURCES</a></li>
-                        <li><a href='/'>NEWS & EVENT</a></li>
-                        <li><a href='/'>SEARCH </a></li>
-                    </ul>
-                </div>
-                <div className="pr-3 flex justify-start">
-                    <button className="primary-color-yellow hidden py-3 shadow-lg sm:px-4 text-white text-lg rounded-2xl font-extrabold">SignUp?Login</button>
-                </div>
-            </div>
+            </nav>
         </>
     )
 }

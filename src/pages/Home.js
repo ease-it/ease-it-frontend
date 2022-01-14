@@ -6,17 +6,19 @@ import HeaderNav from '../components/HeaderNav'
 import LastestEaseIt from '../components/LastestEaseIt'
 import MainNav from '../components/MainNav'
 import WhyChooseUs from '../components/WhyChooseUs'
+import Footer from "../components/Footer"
 
 const Home = () => {
     return (
         <div>
-            <HeaderNav/>
+            <HeaderNav />
             <MainNav />
-            <GetStarted/>
-            <WhyChooseUs/>
+            <GetStarted />
+            <WhyChooseUs />
             <AboutUs />
-            <LastestEaseIt/>
+            <LastestEaseIt />
             <Community />
+            <Footer />
         </div>
     )
 }

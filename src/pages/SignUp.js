@@ -4,14 +4,15 @@ import easeItpng from '../assets/images/ease-it-logo.png'
 
 const SignUp = () => {
 
-    const [fullname, setFullname] = useState('');
-    const [email, setEmail] = useState('');
-    const [organization, setOrgainzation] = useState('');
-    const [category, setCategory] = useState('')
-    const [schoolID, setSchoolID] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
-
+    const [details, setDetails] = useState({
+        fullname:'',
+        email: '',
+        organization:'',
+        category: '',
+        schoolID : '',
+        password: '',
+        confirmPassword: '',
+    })
   
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,31 +25,31 @@ const SignUp = () => {
             <div className="signUp">
                 <form className="form" >
                 <p>
-                <input className="input" type="text" name="fullName" placeholder="Full name" value={fullname} onChange={(e)=> setFullname(e.target.value)}  required ></input>
+                <input className="input" type="text" name="fullName" placeholder="Full name" value={details.fullname} onChange={(e)=> setDetails({...details, fullname: e.target.value})}  required ></input>
                 </p>
                 <p>
-                <input className="input" type="text"  name="email"  placeholder="Email Address" value={email} onChange={(e)=>setEmail(e.target.value)} required ></input>
+                <input className="input" type="text"  name="email"  placeholder="Email Address" value={details.email} onChange={(e)=>setDetails({...details, email: e.target.value})} required ></input>
                 </p>
                <p>
-               <input className="input" type="text" name="organization"  placeholder="School/Organization" value={organization} onChange={(e)=>setOrgainzation(e.target.value)} ></input>  
+               <input className="input" type="text" name="organization"  placeholder="School/Organization" value={details.organization} onChange={(e)=>setDetails({...details, organization: e.target.value})} ></input>  
                </p>
                <p>
                <select className="input" name="category" >
-                    <option name="category" value={category} onChange={()=>setCategory({categoy: 'teacher'})}  >Teacher</option>
-                    <option name="category" value={category} onChange={()=>setCategory({categoy: 'student'})} >Student</option>
+                    <option name="category" value={details.category} onChange={()=>setDetails({...details, category: 'teacher'})}  >Teacher</option>
+                    <option name="category" value={details.category} onChange={()=>setDetails({...details,category: 'student'})} >Student</option>
                 </select>
                </p>
                <p>
-               <input className="input" type="text" name="schoolID" placeholder="School/Organization ID" value={schoolID} onChange={(e)=>setSchoolID(e.target.value)} ></input>
+               <input className="input" type="text" name="schoolID" placeholder="School/Organization ID" value={details.schoolID} onChange={(e)=>setDetails({...details, schoolID: e.target.value})} ></input>
                </p>
                <p>
-               <input className="input" type="password" name="password" placeholder="Password" value={password} onChange={(e)=>setPassword(e.target.value)} required ></input>
+               <input className="input" type="password" name="password" placeholder="Password" value={details.password} onChange={(e)=>setDetails({...details, password:e.target.value})} required ></input>
                </p>
                 <p>
-                <input className="input" type="password" name="confirmPassword" placeholder="Confirm Password" value={confirmPassword} onChange={(e)=>setConfirmPassword(e.target.value)} required ></input>
+                <input className="input" type="password" name="confirmPassword" placeholder="Confirm Password" value={details.confirmPassword} onChange={(e)=>setDetails({...details, confirmPassword: e.target.value})} required ></input>
                 </p>     
                 <div>
-                <button disabled={!fullname || !email || !password ||  password !== confirmPassword} className="btn" type="submit" onClick={handleSubmit} name="signUp" value="submit" >SIGN UP</button>
+                <button disabled={!details.fullname || !details.email || details.organization || !details.password || details.password !== details.confirmPassword} className="btn" type="submit" onClick={handleSubmit} name="signUp" value="submit" >SIGN UP</button>
                 </div>
                 </form>
                 <div>
@@ -56,7 +57,6 @@ const SignUp = () => {
                 </div>
                 </div>
                
-                
             </div>
         
     )

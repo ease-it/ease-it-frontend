@@ -49,7 +49,7 @@ const Dashboard = () => {
                                 </li>
                                 <li
                                     className="self-center mr-3 hover:border-b-4 hover:border-clr-4 hover:-mb-1 focus:border-b-4 focus:border-clr-4 font-bold text-clr-2 text-xs">
-                                    <a href="/"> Search
+                                    <a href="/" className='search-nav-icon'> Search
                                         <GrSearch className="react-icons" />
                                     </a>
                                 </li>

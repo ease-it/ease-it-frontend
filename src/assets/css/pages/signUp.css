@@ -1,0 +1,47 @@
+.container {
+    color:  #000;
+    margin:0 auto;
+    width:35vw;
+    max-width:100%;
+}
+.signUp {
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    
+}
+.form {
+    padding-top: 5px;
+    background-color: #BFC1FD;
+    border-radius: 10px;
+    
+}
+h1 {
+    margin-bottom: 10px;
+    color: #161859;
+}
+
+.input {
+    border: 1px solid #000;
+    margin:10px 0;
+    width:60%;
+    color:#000;
+    padding: 2px;
+}
+
+.btn {
+    background-color: #161859;
+    width:60%;
+    margin:15px 0;
+    color: #fff;
+    padding:3px;
+}
+
+.btn2 {
+    border: 1px solid black;
+    margin: 20px 0;
+    width:60%;
+    padding:3px;
+    
+}
+

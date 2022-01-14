@@ -51,7 +51,7 @@ h1 {
 .react-icons {
     display: flex;
     color: #161859;
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 5px;
 }
 
@@ -61,4 +61,8 @@ h1 {
 
 .search-nav-icon {
     display: flex;
+}
+
+.font-lighter {
+    font-weight: 200;
 }

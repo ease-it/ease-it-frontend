@@ -1,21 +1,41 @@
 import React,{useState} from 'react';
+import axios from 'axios'
 import '../assets/css/pages/signUp.css';
-import easeItpng from '../assets/images/ease-it-logo.png'
-
+import easeItpng from '../assets/images/ease-it-logo.png';
+import {Loading} from '../components/Loading'
+import {useNavigate} from 'react-router-dom'
 const SignUp = () => {
-
+    const navigate = useNavigate()
     const [details, setDetails] = useState({
-        fullname:'',
+        name:'',
         email: '',
-        organization:'',
-        category: '',
-        schoolID : '',
+        sch_org:'',
+        sch_org_id: '',
         password: '',
-        confirmPassword: '',
+        c_password: '',
     })
-  
+    const [loading, setLoading]  = useState(false)
+    console.log(details)
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
+        setLoading(true)
+        const config = {
+            headers: { 
+                Accept: '*/*',
+                'content-type':'application/Json'
+        }
+        }
+        
+        axios.post('https://easeit.herokuapp.com/api/signup', JSON.stringify(details), config)
+        .then(res => {
+            console.log(res)
+            navigate("/")
+        })
+        .catch (err =>
+            {
+                navigate("/")
+                console.log(err)
+            })
     }
 
     return (
@@ -23,15 +43,15 @@ const SignUp = () => {
             <p><img src={easeItpng} alt="Ease-It Logo" ></img></p>
                <h1>Sign Up</h1>
             <div className="signUp">
-                <form className="form" >
+                <form className="form"  >
                 <p>
-                <input className="input" type="text" name="fullName" placeholder="Full name" value={details.fullname} onChange={(e)=> setDetails({...details, fullname: e.target.value})}  required ></input>
+                <input className="input" type="text" name="name" placeholder="Full name" value={details.name}  onChange={(e)=> setDetails({...details, name: e.target.value})}  required ></input>
                 </p>
                 <p>
-                <input className="input" type="text"  name="email"  placeholder="Email Address" value={details.email} onChange={(e)=>setDetails({...details, email: e.target.value})} required ></input>
+                        <input className="input" type="text" name="email" placeholder="Email Address" value={details.email} onChange={(e)=>setDetails({...details, email: e.target.value})} required ></input>
                 </p>
                <p>
-               <input className="input" type="text" name="organization"  placeholder="School/Organization" value={details.organization} onChange={(e)=>setDetails({...details, organization: e.target.value})} ></input>  
+                        <input className="input" type="text" name="sch_org" placeholder="School/Organization" value={details.sch_org} onChange={(e)=>setDetails({...details, sch_org: e.target.value})} ></input>  
                </p>
                <p>
                <select className="input" name="category" >
@@ -40,20 +60,21 @@ const SignUp = () => {
                 </select>
                </p>
                <p>
-               <input className="input" type="text" name="schoolID" placeholder="School/Organization ID" value={details.schoolID} onChange={(e)=>setDetails({...details, schoolID: e.target.value})} ></input>
+                        <input className="input" type="text" name="sch_org_id" placeholder="School/Organization ID" value={details.sch_org_id} onChange={(e)=>setDetails({...details, sch_org_id: e.target.value})} ></input>
                </p>
                <p>
-               <input className="input" type="password" name="password" placeholder="Password" value={details.password} onChange={(e)=>setDetails({...details, password:e.target.value})} required ></input>
+                        <input className="input" type="password" name="password" placeholder="Password" value={details.password} onChange={(e)=>setDetails({...details, password:e.target.value})} required ></input>
                </p>
                 <p>
-                <input className="input" type="password" name="confirmPassword" placeholder="Confirm Password" value={details.confirmPassword} onChange={(e)=>setDetails({...details, confirmPassword: e.target.value})} required ></input>
+                        <input className="input" type="password" name="c_password" placeholder="Confirm Password" value={details.c_password} onChange={(e)=>setDetails({...details, c_password: e.target.value})} required ></input>
                 </p>     
                 <div>
-                <button disabled={!details.fullname || !details.email || details.organization || !details.password || details.password !== details.confirmPassword} className="btn" type="submit" onClick={handleSubmit} name="signUp" value="submit" >SIGN UP</button>
+                        <button   className="btn bg-blue-800 cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed" type="submit" onClick={handleSubmit} name="signUp" value="submit" >SIGN UP</button>
                 </div>
+                    {loading && <Loading /> }
                 </form>
                 <div>
-                    <button className="btn2"  type="button" >Already have an account? Click here</button>
+                    <button className="btn2"  type="button" >Already have an account? Click here</button>                   
                 </div>
                 </div>
                

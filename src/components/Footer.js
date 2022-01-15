@@ -24,7 +24,7 @@ const Footer = () => {
                                     <span className="h-4 w-4 text-clr-3 text-center text-xs rounded-3xl self-center">
                                         <GrFacebook className="react-icons" />
                                     </span>
-                                    <span className="h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl">
+                                    <span className="h-4 w-4 self-center text-center text-clr-2 text-xs rounded-3xl">
                                         <GrInstagram className="react-icons" />
                                     </span>
                                     <span className="h-4 w-4 text-clr-3 text-center text-xs rounded-3xl self-center">
@@ -34,7 +34,7 @@ const Footer = () => {
                                         <GrTwitter className="react-icons" />
                                     </span>
                                     <span
-                                        className="h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl">
+                                        className="h-4 w-4  self-center text-center text-clr-2 text-xs rounded-3xl">
                                         <GrYoutube className="react-icons" />
                                     </span>
                                 </div>

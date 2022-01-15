@@ -17,8 +17,8 @@ const Routing = () => {
             <Route path="/" element={<Home />} />
             <Route path="/NewsEvent" element={<NewsEvent />} />
             <Route path="/signup" element={<SignUp/>}  />
-            <Route path="/*" element={<Protected />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/*" element={<Protected />} />
             <Route path="/reset2" element={<Reset2 />} />
             <Route path="/reset3" element={<Reset3 />} />
             <Route path="/upload-assignment" element={<UploadAssignment />} />

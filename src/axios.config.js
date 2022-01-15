@@ -1,7 +1,10 @@
 import axios from "axios"
 
-const instance = axios.create({
-    baseURL: "https://api.example.com"
+const base = axios.create({
+    baseURL: "https://easeit.herokuapp.com/",
+    headers:{
+        Accept:'*/*'
+    }
 })
 
-export default instance
+export default base

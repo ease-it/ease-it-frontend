@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header id="top">
             <div class="blue-nav">
                 <button class="btn">Country/Region ⌵</button>
                 <div class="header-links-wrapper">
@@ -115,11 +115,11 @@
             <div class="opaque-wrapper">
                 <p class="community-p">Join our community of Ease-it users.<br>With us, you can only get better. </p>
                 <button class="community-btn">Get Started</button>
-                <div class="to-top">
+                <a href="#top" class="to-top">
                     <span class="arrow"><i class="material-icons">north
                     </i></span>
-                    <a href="">Back to top</a>
-                </div>
+                    <span>Back to top</span>
+                </a>
             </div>
         </section>
         <footer>
@@ -129,11 +129,12 @@
                 </a>
                <form class="newsletter">
                    <div class="letter-sub">
-                       <p>Subscribe to our newsletter</p>
-                       <input class="sub-input" type="email" name="email">
+                       <div>
+                            <p class="text-center md:text-left">Subscribe to our newsletter</p>
+                            <input class="sub-input" type="email" name="email">
+                        </div>
                        <input class="letter-button" type="button" name="button" value="Subscribe">
                    </div>
-                   
                 </form> 
             </div>
             <div class="site-info">
@@ -148,11 +149,11 @@
                         <div class="socials">
                             <p>Follow us on Social Media</p>
                             <div class="social-handles">
-                                <span class="icon2"><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                                <span class="icon3"><img src="./instagram.svg" alt="instagram logo"></span>
-                                <span class="icon2"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                                <span class="icon2"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                                <span class="icon4"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                                <a href="https://www.facebook.com/Ease-it-100542219190033/" target="_blank" class="icon2"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/easeit9?r=nametag" target="_blank" class="icon3"><img src="./instagram.svg" alt="instagram logo"></a>
+                                <a href="https://www.linkedin.com/company/ease-it9" target="_blank"  class="icon2"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a class="icon2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a class="icon2"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div> 
@@ -175,9 +176,24 @@
                                 <a href="#">Become a Partner</a>
                             </div>
                         </div>
+                        <div class="links-group-wrapper-2">
+                            <div class="links-group">
+                                <a href="#">About</a>
+                                <a href="#">Community</a>
+                                <a href="#">What's New</a>
+                                <a href="#">FAQs</a>
+                                <a href="#">Become a Partner</a>
+                            </div>
+                            <div class="links-group">
+                                <a href="#">Guidelines</a>
+                                <a href="#">Resources</a>
+                                <a href="#">Privacy</a>
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
                     </div>
                </div> 
-               <p class="legal">All rights reserved. Team 9 Sidehustle Boot Camp 4.0</p>
+               <p class="sm:py-2 px-3 legal">All rights reserved. Team 9 Sidehustle Boot Camp 4.0</p>
             </div>
         </footer>
    </div> 

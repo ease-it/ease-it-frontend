@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 @layer utilities{
-    .grid-rows-2{
+    .grid-row-2{
         grid-template-rows: repeat(4, minmax(0px, max-content));
     }
     .grid-rows_3{
@@ -21,7 +21,7 @@
 
 
 body{
-    @apply box-border font-monteserrat overflow-x-hidden bg-clr-5;
+    @apply box-border overflow-x-hidden font-monteserrat  text-clr-2 bg-clr-5;
 }
 .wrapper{
     @apply flex flex-col 
@@ -29,7 +29,6 @@ body{
 }
 
 /* --------------------------------------------------- */
-
 
 /* Header */
 
@@ -39,13 +38,13 @@ header{
     1md:pl-10 1md:pr-3
     4md:pl-8 4md:col-span-12 4md:grid 4md:grid-cols-12
     xl:pl-0
-    2xl:pl-0;  
+    2xl:pl-0;
 }
 .blue-nav{
     @apply flex justify-between m-2 
     xsm:justify-evenly m-3
     smx:justify-between
-    sm:mx-4 
+    sm:mx-2
     2sm:mx-8 2sm:p-2 2sm:m-0
     1md:pl-0 1md:ml-6
     4md:col-start-2 4md:col-end-13 4md:mx-0
@@ -138,17 +137,23 @@ nav{
 }
 /* Header End */
 
+
 /* ---------------------------------------- */
 main{
-    @apply flex flex-col items-center mt-10;
-    /* col-start-2 col-end-12 grid grid-cols-12 gap-x-10 gap-y-0 mt-8 mb-4; */
-    /* grid-rows_4 */
+    @apply flex flex-col relative items-center mt-5
+    sm:p-4
+    2sm:px-6
+    3sm:px-10
+    1md:mt-8 1md:mb-4 1md:grid 1md:grid-cols-12 1md:grid-rows_4 1md:gap-y-0 1md:gap-x-0 ;
+    /* col-start-2 col-end-12 ; */
+    /* */
 }
 
 /* Dashboard Side-bar */
 .side-bar{
-    @apply flex flex-col w-52 h-96 self-start m-3
-    /* col-span-4 row-start-2 row-end-5 grid grid-cols-1 grid-rows-2 gap-x-2; */
+    @apply flex flex-col w-52 h-96 self-start m-3 absolute
+    1md:static 1md:h-screen 1md:ml-8 1md:col-span-4 1md:row-start-1 1md:row-end-5  1md:grid 1md:grid-cols-1 1md:grid-rows_3 1md:gap-x-0;
+    /* 1md:row-start-2 1md:row-end-5 */
 }
 /* Heading */
 h1{
@@ -156,10 +161,12 @@ h1{
 }
 .dropdown{
     @apply font-black;
-}  ,mc
+} 
 /* Yellow Container */
 .links-wrapper{
-    @apply bg-clr-4 row-start-2 row-end-3 h-screen border-2 border-black/40 drop-shadow-lg;
+    @apply bg-clr-4/90 w-screen h-max border-2 border-black/40 drop-shadow-lg z-10 hidden
+    md:w-max 
+    1md:block 1md:bg-clr-4 1md:h-screen 1md:row-start-2 1md:row-end-4     ;
 }
 /* Ul Container*/
 .side-barLinks{
@@ -171,7 +178,8 @@ h1{
 }
 /* Icon Container */
 .side-icons{
-    @apply w-6 h-6 text-clr-2 bg-clr-4 text-center text-xs rounded-3xl flex justify-center;
+    @apply w-6 h-6 text-clr-2 bg-clr-4/0 text-center text-xs rounded-3xl flex justify-center
+    md:opacity-100;
 }
 /* Icon Tag */
 .icons{
@@ -180,10 +188,6 @@ h1{
 /* Tutorial and Profile Icon */
 .icon1{
     @apply bg-clr-3 p-1 rounded-3xl;
-}
-/* Log Out Icon */
-.fa-sign-out{
-    @apply text-clr-4 font-semibold text-center p-1 bg-clr-4 rounded-3xl; 
 }
 /* Side-bar Anchor Text*/
 .side-anchor{
@@ -195,7 +199,9 @@ h1{
 
 /* Video Container */
 .tutorial-vid{
-    @apply col-start-5 col-end-13 row-start-2 row-end-3 flex flex-col pt-14 ml-10;
+    @apply flex flex-col pt-14 mx-4
+    1md:col-start-5 col-end-13 row-start-2 row-end-3 flex flex-col ;
+    /*  */
 }
 h3{
     @apply font-serif_display tracking-wider font-extralight pb-2;
@@ -206,20 +212,25 @@ h3{
 
 /* Tutorial Summary Container */
 .tutorial-summary{
-    @apply col-start-5 col-end-13 row-start-3 row-end-5 flex flex-col border-l-2 border-clr-1 rounded-sm;
+    @apply flex my-6 mx-3 p-2
+    1md:row-start-3 1md:row-end-5 1md:col-start-5 1md:col-end-13 1md:border-l-2 1md:border-clr-2 1md:rounded-sm;
+    /*  */
 }
 .content-wrapper{
-    @apply ml-10; 
-    /* grid grid-cols-1 grid-rows_3 gap-y-6; */
+    @apply flex flex-col pt-6 border-t-2 border-clr-2/70
+    1md:border-t-0
+    1md:grid 1md:grid-cols-1 1md:grid-rows_3 1md:gap-y-6 1md:ml-10; 
 }
 .summary-content{
-    @apply bg-clr-3 rounded-2xl p-2 h-max p-4 mb-8 flex flex-col justify-between;
+    @apply bg-clr-3 rounded-2xl p-2 h-max p-4 mb-6 flex flex-col justify-between;
+    /* mb-8 */
 }
 h4{
     @apply font-serif_display text-sm tracking-wider;
 }
 .summary-p{
-    @apply text-xs my-2;
+    @apply text-xs my-2
+    1md:text-sm;
 }
 .summary-btn{
     @apply bg-clr-4 rounded-lg drop-shadow-lg p-2 py-1 text-white text-xs tracking-wider self-end;
@@ -231,24 +242,31 @@ h4{
 
 /* Community Section Wrapper */
 .com-sect{
-    @apply col-start-1 col-end-13 bg-[url('../newsletter.svg')] bg-center bg-no-repeat bg-cover h-80 text-white font-serif_display;
+    @apply font-serif_display bg-[url('../newsletter.svg')] bg-center bg-no-repeat bg-cover h-80 text-white;
+    /* col-start-1 col-end-13 */
 }
 /* Transparent Wrapper */
 .opaque-wrapper{
-    @apply w-full h-full bg-clr-2/20 flex flex-col justify-between items-center p-6;
+    @apply w-full h-full bg-clr-2/20 flex flex-col justify-evenly items-center p-5;
+    /* justify-between p-6 */
 }
 .community-p{
-    @apply mt-10 text-center text-xl tracking-wider;
+    @apply mt-10 text-center text-lg tracking-wider
+    1md:text-2xl;
 }
 .community-btn{
-    @apply mb-8 bg-clr-4 rounded-3xl drop-shadow-lg m-2 px-6 py-2 font-monteserrat font-semibold text-white tracking-widest;
+    @apply mb-8 bg-clr-4 rounded-3xl drop-shadow-lg m-2 px-2 mt-8 font-monteserrat font-semibold text-white tracking-widest
+    2sm:px-6 py-2;
+    /* mt-0 */
 }
 /* Back to Top */
 .to-top{
-    @apply self-end flex flex-col justify-between items-center font-monteserrat text-sm;
+    @apply self-end flex flex-col justify-between items-end font-monteserrat text-xs cursor-pointer
+    1md:text-sm 1md:items-center;
 }
 .material-icons{
-    @apply p-1 bg-[#f6f6f6] text-center text-clr-2 font-black self-center rounded-3xl;
+    @apply p-0 bg-[#f6f6f6] text-center text-clr-2 font-black self-center rounded-3xl text-xxs
+    1md:p-1;
 }
 /* Community Section End*/
 /* ----------------------------------- */
@@ -256,16 +274,23 @@ h4{
 /* Footer Section */
 /* Footer Wrapper */
 footer{
-    @apply col-start-1 col-end-13;
+    @apply flex flex-col;
+    /* col-start-1 col-end-13 */
 }
 
 /* Subscribe and Download Section */
 .subscribe{
-    @apply bg-clr-2 text-white text-sm flex justify-between p-4 px-6;
+    @apply bg-clr-2 text-white text-xs flex flex-col justify-center p-6
+    md:flex-row justify-between;
+    /* 1md:text-sm; */
+    /* p-4 px-6 */
 }
 /* Download button */
 .download{
-    @apply flex self-center bg-clr-5 font-semibold text-black text-center p-1 px-4 shadow-xl;
+    @apply flex self-center bg-clr-5 font-semibold text-black text-center py-2 px-2 mb-8 shadow-xl
+    md:mb-0 md:px-4
+    1md:mt-4;
+    /* p-1 */
 }
 /* Playstore Image */
 .store-img{ 
@@ -275,53 +300,71 @@ footer{
 .newsletter{
     @apply flex justify-between;
 }
+.letter-sub{
+    @apply flex flex-col items-center w-full
+    sm:mx-0
+    md:items-start md:mt-5
+    1md:flex-row 1md:mt-0;
+}
 .sub-input{
-    @apply w-full outline-none p-1 pl-2 text-black w-80 mt-1;
+    @apply w-48 outline-none h-8 p-1 pl-2 text-black mt-1
+    sm:w-60
+    2sm:w-80;
+    
+    /* w-full w-80 */
 }
 .letter-button{
-    @apply bg-clr-4 rounded drop-shadow-lg mx-2 px-2 py-1 text-white tracking-wider;
+    @apply bg-clr-4 rounded drop-shadow-lg mt-3 px-2 py-1 text-white tracking-wider self-center
+    md:self-end
+    1md:mx-2 1md:p-2 1md:mt-5 1md:self-center;
 }
 /* Footer Links */
 
 /* Site Info Wrapper*/
 .site-info{
-    @apply flex flex-col bg-clr-3 p-4;
+    @apply flex flex-col bg-clr-3 p-2
+    3sm:px-8 pt-6;
+    /* p-4 */
 }
 /* Footer Links Wrapper */
 .footer-links{
-    @apply flex px-8 py-4;
+    @apply flex flex-col px-4 py-4
+    2sm:flex-row
+    md:pr-0;
+    /* px-8 */
 }
 /* Contact */
 .contact{
-    @apply flex flex-col justify-evenly ml-10 mr-20;
+    @apply flex flex-col justify-evenly;
+    /*ml-10 mr-20  */
 }
 .footer-img{
-    @apply w-1/2;
+    @apply w-1/2 -ml-3;
 }
 .ph-numbers{
-    @apply ml-4 my-2 text-sm tracking-wider;
+    @apply my-2 text-sm tracking-wider;
+    /* ml-4 */
 }
 /* Contact End*/
 
 /* Social Media */
 .socials{
-    @apply ml-4 text-sm flex flex-col;
+    @apply text-sm flex flex-col ;
+    /* ml-4 */
 }
 .socials p{
     @apply text-xs
 }
 .social-handles{
-    @apply w-full flex justify-between mt-1;
+    @apply w-full flex justify-between mt-1
+    sm:justify-start;
 }
 .icon2{
     @apply h-4 w-4 text-clr-3 bg-clr-2 text-center 
-    text-xs rounded-3xl self-center;
-}
-.icon4{
-    @apply h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl border border-clr-2; 
+    text-xs rounded-3xl self-center mr-4;
 }
 .icon3{
-    @apply h-4 w-4 text-clr-3 self-center text-center text-clr-2 text-xs rounded-3xl;
+    @apply h-4 w-4 mr-4;
 }
 /* Social Media End*/
 
@@ -329,22 +372,38 @@ footer{
 
 /* Quicklinks */
 .quicklinks{
-    @apply flex flex-col m-6 text-sm;
+    @apply flex flex-col justify-center mt-10
+    2sm:mt-4 2sm:ml-6
+    3sm:ml-20
+    md:ml-10
+    1md:justify-between;
+    /* m-6 */
 }
 .links-group-wrapper{
-    @apply flex self-center w-full h-full;
+    @apply flex self-center w-full h-full
+    xsm:hidden
+    md:flex;
+}
+.links-group-wrapper-2{
+    @apply flex self-center w-full h-full
+    2sm:justify-start
+    md:hidden;
 }
 .links-group{
-    @apply flex flex-col justify-evenly mr-10 text-xs font-medium text-clr-2 tracking-wider;
+    @apply flex flex-col text-xs font-medium text-clr-2 tracking-wider
+    md:justify-evenly md:mr-4;
+    /* justify-evenly flex-col mr-10*/
 }
 .links-group a{
-    @apply hover:text-clr-2/80 mt-4;
+    @apply hover:text-clr-2/80 mt-2
+    md:mt-0;
 }
 h5{
     @apply text-clr-2 font-extrabold text-sm tracking-wider;
 }
 .legal{
-    @apply mt-5 self-center text-sm italic text-clr-4 font-[600] tracking-wider;
+    @apply mt-5 text-center text-xs italic text-clr-4 font-semibold tracking-wider;
+    /*self-center text-sm */
 }
 /* Quicklinks End */
 /* Footer Section End*/

@@ -159,7 +159,7 @@ const Dashboard = () => {
                             <span className="arrow">
                                 <i className="material-icons">north</i>
                             </span>
-                            <a href="">Back to top</a>
+                            <a href="/">Back to top</a>
                         </div>
                     </div>
                 </section>

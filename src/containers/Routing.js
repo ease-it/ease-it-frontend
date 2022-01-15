@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
+import SignUp from '../pages/SignUp'
 import Home from '../pages/Home'
 import Dashboard from "../pages/Dashboard"
 import NewsEvent from '../pages/NewsEvent'
@@ -15,6 +16,7 @@ const Routing = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/NewsEvent" element={<NewsEvent />} />
+            <Route path="/signup" element={<SignUp/>}  />
             <Route path="/*" element={<Protected />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/reset2" element={<Reset2 />} />

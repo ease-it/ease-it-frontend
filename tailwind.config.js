@@ -3,33 +3,33 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,html}', './public/index.html'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    screens:{//customised screens
-      'xsm':'200px',
+    screens: { //customised screens
+      'xsm': '200px',
       'smx': '280px',
-      'sm':'320px',
-      '2sm':'450px',
-      '3sm':'550px',
-      '4sm':'603px',
+      'sm': '320px',
+      '2sm': '450px',
+      '3sm': '550px',
+      '4sm': '603px',
       'md': '640px',
       '1md': '725px',
       '2md': '768px',
       '3md': '800px',
       '4md': '900px',
-      'lg':'960px',
+      'lg': '960px',
       'xl': '1024px',
       '2xl': '1280px',
       '3xl': '1536px',
       '4xl': '2560px',
     },
     extend: {
-      fontSize:{
+      fontSize: {
         'xxs': '.575rem'
       },
-      fontFamily:{
+      fontFamily: {
         serif_display: ['DM Serif Display', 'serif'],
         monteserrat: ['Montserrat', 'sans-serif'],
       },
-      colors:{
+      colors: {
         'clr-1': '#090602',
         'clr-2': '#161859',
         'clr-3': '#BFC1FD',

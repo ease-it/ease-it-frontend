@@ -21,8 +21,8 @@ const GetStarted = () => {
                 </div>
                 <div className='get-started__button-box'>
                     <button className='get-started__button'>Get Started
-                        <span>
-                            <AiOutlineArrowRight className='get-started__button-icon' />
+                        <span className='get-started__button-icon' >
+                            <AiOutlineArrowRight />
                         </span>
                     </button>
                     <a href='/' className='get-started__download'>Download Mobile App

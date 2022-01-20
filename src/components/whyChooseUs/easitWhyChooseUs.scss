@@ -10,13 +10,18 @@
     }
 
     &__img {
+        margin: auto;
+
         @media only screen and (max-width: $bp-large) {
             width: 20%;
+
+
         }
     }
 
     &__heading {
         color: $secondary-color;
+        font-weight: bold;
 
         @media only screen and (max-width: $bp-small) {
             font-size: 1.8rem;
@@ -30,8 +35,6 @@
             width: 100%;
             text-align: center;
         }
-
-
     }
 
     &__button {

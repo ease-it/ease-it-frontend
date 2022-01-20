@@ -4,7 +4,7 @@ import base from "../../axios.config"
 import { GrFacebook } from "react-icons/gr"
 import { GrGoogle } from "react-icons/gr"
 import { GrLinkedin } from "react-icons/gr"
-import easeItpng from '../../assets/images/ease-it-logo.png';
+import easeItpng from '../../assets/ease-it.svg';
 
 
 

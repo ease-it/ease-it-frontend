@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import base from "../../axios.config"
 import { useNavigate } from 'react-router-dom'
 import { Loading } from '../../components/Loading'
-import easeItpng from '../../assets/images/ease-it-logo.png';
+import easeItpng from '../../assets/ease-it.svg';
 import "./signup.scss"
 
 const SignUp = () => {

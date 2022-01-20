@@ -1,59 +1,57 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@200;400;600&display=swap');
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* this defines what 1rem is equal to */
+    font-size: 62.5%;
+    /*1rem = 10px; 10/16 = 62.5% */
+
+    box-sizing: border-box;
+
+    @media only screen and (max-width:68.75em) {
+        font-size: 50%;
+    }
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.7;
+
 }
 
 h1 {
-    font-size: 32px;
-}
-
-.font-monserrat {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.primary-color-yellow {
-    background-color: #D39E2A;
-}
-
-.font-DM {
+    font-size: 3.2rem;
     font-family: 'DM Serif Display', san-serif;
+
 }
 
-.primary-color-yellow--text {
-    color: #D39E2A;
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
 }
 
-.primary-color-blue {
-    color: #161859;
+li {
+    font-size: 1.4rem;
+    list-style: none;
 }
 
-.primary-color-blue__background {
-    background-color: #161859;
-}
 
-.material-icons {
-    font-size: 16px
-}
-
-.material-icons.pt.pl {
-    transform: translateY(5px);
-    padding-left: 10px;
-}
-
-.react-icons {
-    display: flex;
-    color: #161859;
-    font-size: 18px;
-    padding-left: 5px;
-}
 
 .upNav {
     transform: translateY(-2px)

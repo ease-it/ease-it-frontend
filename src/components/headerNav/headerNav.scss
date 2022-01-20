@@ -1,0 +1,37 @@
+@import "../../assets/sass/abstracts/variables";
+@import "../../assets/sass/abstracts/mixins";
+
+.header {
+    background-color: $primary-bg-color;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 2rem 8rem;
+
+    @media only screen and (max-width:$bp-extra-extra-small) {
+        flex-direction: column;
+
+    }
+
+    &__button {
+        @include primary-button;
+    }
+
+    &__icon {
+        margin-left: .5rem;
+    }
+
+    &__links-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    &__link {
+        margin-right: 1rem;
+        color: $secondary-color;
+        font-weight: bold;
+        padding: 1.3rem;
+    }
+
+}

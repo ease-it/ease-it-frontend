@@ -78,7 +78,7 @@
      }
 
      &__button {
-         max-width: 40%;
+         max-width: 50%;
          margin-left: 6rem;
          border: none;
          background-color: $secondary-color;
@@ -99,10 +99,8 @@
              max-width: 100%;
          }
 
-
          &-icon {
              transform: translateY(.3rem);
-             margin-left: .7rem;
 
          }
      }

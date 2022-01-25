@@ -1,0 +1,173 @@
+@import "../../assets/sass/abstracts/mixins";
+@import "../../assets/sass/abstracts/variables";
+
+.login {
+    max-width: 1500rem;
+
+    &__heading {
+        color: $tertiary-color;
+        text-align: center;
+    }
+
+    &__form-box {
+        display: flex;
+        padding: 4.5rem;
+        height: 90vh;
+        margin: auto 5rem;
+
+        @media only screen and (max-width:$bp-medium) {
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width:$bp-small) {
+            height: max-content;
+            width: 100vw;
+            margin: auto;
+        }
+    }
+
+    &__teacher {
+        background-color: $primary-bg-color;
+        flex: 0 0 50%;
+        margin-right: 4.5rem;
+        padding: 5rem;
+        text-align: center;
+        box-shadow: $shadow-secondary;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @media only screen and (max-width:$bp-medium) {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+
+        &>select {
+            height: 4rem;
+            border: 3px solid $tertiary-color;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin: 1.5rem 0;
+            }
+
+            @media only screen and (max-width: $bp-extra-small) {
+                margin: 2rem 0;
+            }
+        }
+
+        &>p {
+            color: $secondary-color;
+            font-weight: bold;
+
+            @media only screen and (max-width: $bp-extra-small) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__student {
+        background-color: $primary-bg-color;
+        flex: 1;
+        padding: 5rem;
+        text-align: center;
+        box-shadow: $shadow-secondary;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &>input {
+            height: 4rem;
+            border: 3px solid $tertiary-color;
+            background-color: $primary-bg-color;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin: 1.5rem 0;
+            }
+
+            @media only screen and (max-width: $bp-extra-small) {
+                margin: 2rem 0;
+            }
+        }
+
+        &>p {
+            color: $secondary-color;
+            font-weight: bold;
+
+            @media only screen and (max-width: $bp-extra-small) {
+                font-size: 1.4rem;
+            }
+        }
+
+        ::placeholder {
+            color: $secondary-color;
+            font-size: 1.5rem;
+            padding: .5rem 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__remember {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin: 1.5rem 0;
+        }
+
+        @media only screen and (max-width: $bp-extra-small) {
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+
+        &-pswd {
+            color: $secondary-color;
+            font-weight: bold;
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: $secondary-color;
+        height: 4rem;
+        color: $tertiary-color;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    &__options {
+        margin: 1rem 0;
+    }
+
+    &__socials {
+        color: $secondary-color;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    &__account-box {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width:$bp-small) {
+            display: block;
+        }
+    }
+
+    &__account {
+        border: 3px solid $secondary-color;
+        padding: 1rem;
+        color: $secondary-color;
+        font-weight: bold;
+        box-shadow: $shadow-secondary;
+
+        &>span {
+            color: $tertiary-color;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "../../assets/sass/abstracts/mixins";
+@import "../../assets/sass/abstracts/variables";
+
+.card {
+    box-shadow: $shadow-secondary;
+    border-radius: 1rem;
+
+    @media only screen and (max-width:$bp-medium) {
+        margin-bottom: 3rem;
+    }
+
+    @media only screen and (max-width:$bp-extra-extra-small) {
+        margin-bottom: 4rem;
+    }
+
+    &__img {
+        max-width: 30rem;
+        height: 20rem;
+
+        @media only screen and (max-width:$bp-medium) {
+            max-width: 100%;
+        }
+
+    }
+
+    &__text {
+        max-width: 25rem;
+        padding: 6rem;
+        text-align: left;
+        color: $secondary-color;
+        font-weight: bold;
+
+        @media only screen and (max-width:$bp-medium) {
+            text-align: center;
+        }
+
+        @media only screen and (max-width:$bp-extra-extra-small) {
+            padding: 1rem;
+        }
+    }
+}

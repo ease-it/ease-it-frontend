@@ -1,0 +1,96 @@
+@import "../../assets/sass/abstracts/mixins";
+@import "../../assets/sass/abstracts/variables";
+
+.signUp {
+    max-width: 100%;
+
+    &__heading {
+        color: $secondary-color;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__form-container {
+        width: 60%;
+        height: max-content;
+        margin: 1rem auto 15rem auto;
+        text-align: center;
+
+        @media only screen and (max-width:$bp-medium) {
+            width: 90vw;
+        }
+    }
+
+    &__form {
+        background-color: $primary-bg-color;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5rem 10rem;
+        text-align: center;
+        box-shadow: $shadow-secondary;
+
+        @media only screen and (max-width:$bp-small) {
+
+            padding: 5rem 0
+        }
+
+        &-submit {
+            background-color: $secondary-color;
+            color: $primary-color;
+            border: none;
+            width: 90%;
+            height: 4rem;
+            margin: 1.5rem;
+            font-size: 1.8rem;
+            box-shadow: $shadow-primary;
+            padding: 1rem;
+            cursor: pointer;
+        }
+
+        &-option {
+            color: $secondary-color;
+        }
+
+        &>input,
+        &>select {
+            width: 90%;
+            height: 4rem;
+            border: 1px solid $secondary-color;
+            color: $secondary-color;
+            margin: 1.5rem;
+            background-color: $primary-bg-color;
+        }
+
+        ::placeholder {
+            color: $secondary-color;
+            opacity: .8;
+            font-size: 1.8rem;
+            padding: 2rem;
+
+            @media only screen and (max-width:$bp-small) {
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+
+    &__account {
+        border: 1px solid $secondary-color;
+        width: 80%;
+        height: 4rem;
+        margin: 3rem;
+        font-size: 1.8rem;
+        background-color: $primary-color;
+        color: $color-black;
+        cursor: pointer;
+        box-shadow: $shadow-primary;
+
+        @media only screen and (max-width: $bp-extra-small) {
+
+            font-size: 1.4rem;
+        }
+    }
+}

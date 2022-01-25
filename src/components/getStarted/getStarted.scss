@@ -1,0 +1,142 @@
+ @import "../../assets/sass/abstracts/variables";
+ @import "../../assets/sass/abstracts/mixins";
+
+ .get-started {
+     background-image: url(../../assets/images/GetStarted.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     padding: 4.5rem;
+
+     @media only screen and (max-width:$bp-large) {
+         padding: 3.5rem
+     }
+
+     @media only screen and (max-width:$bp-small) {
+         height: 100vh;
+     }
+
+
+     &__heading-box {
+         max-width: 80%;
+         margin-left: 6rem;
+     }
+
+     &__heading {
+         font-family: 'DM Serif Display', serif;
+         color: $secondary-color;
+         font-size: 4rem;
+         width: 60%;
+
+
+         @media only screen and (max-width:$bp-medium) {
+             font-size: 3rem;
+         }
+
+         @media only screen and (max-width:$bp-small) {
+             width: 100%;
+             font-size: 2.5rem;
+         }
+     }
+
+     &__paragraph-box {
+         max-width: 60%;
+         margin-left: 1rem;
+
+         @media only screen and (max-width:$bp-small) {
+
+             margin-top: 5rem;
+         }
+     }
+
+     &__paragraph {
+         font-size: 2.8rem;
+         font-weight: bold;
+         color: $primary-color;
+         line-height: 2;
+
+
+
+         @media only screen and (max-width:$bp-medium) {
+             font-size: 2rem;
+         }
+
+         @media only screen and (max-width:$bp-small) {
+             font-size: 1.8rem;
+             margin-top: 1.5rem;
+         }
+     }
+
+     &__button-box {
+         @media only screen and (max-width:$bp-extra-small) {
+             display: flex;
+             flex-direction: column;
+         }
+     }
+
+     &__button {
+         max-width: 50%;
+         margin-left: 6rem;
+         border: none;
+         background-color: $secondary-color;
+         border-radius: 1.5rem;
+         color: $primary-color;
+         padding: 1.5rem;
+         margin-bottom: 2rem;
+         font-size: 2.5rem;
+         cursor: pointer;
+
+
+
+         @media only screen and (max-width:$bp-medium) {
+             font-size: 2rem;
+         }
+
+         @media only screen and (max-width:$bp-extra-small) {
+             max-width: 100%;
+         }
+
+         &-icon {
+             transform: translateY(.3rem);
+
+         }
+     }
+
+     &__download {
+         max-width: 50%;
+         margin-left: 6rem;
+         background-color: $primary-color;
+         font-size: 1.6rem;
+         font-weight: bold;
+         padding: 1rem;
+         color: $color-black;
+         text-align: center;
+
+         @media only screen and (max-width:$bp-largest) {
+             padding: .5rem
+         }
+
+         @media only screen and (max-width:$bp-medium) {
+             padding: .6rem;
+         }
+
+         @media only screen and (max-width:$bp-extra-small) {
+             font-size: 1.5rem;
+             max-width: 100%;
+         }
+
+
+         &-button {
+             @include download-button;
+             padding-left: 1rem;
+
+             @media only screen and (max-width:$bp-extra-small) {
+                 display: block;
+             }
+
+         }
+     }
+ }

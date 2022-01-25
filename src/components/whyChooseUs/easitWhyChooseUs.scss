@@ -1,0 +1,44 @@
+@import "../../assets/sass/abstracts/mixins";
+@import "../../assets/sass/abstracts/variables";
+
+.easeitWhyChooseUs {
+    max-width: 33.33%;
+
+    @media only screen and (max-width: $bp-largest) {
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    &__img {
+        margin: auto;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 20%;
+
+
+        }
+    }
+
+    &__heading {
+        color: $secondary-color;
+        font-weight: bold;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__text {
+        line-height: 2;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__button {
+        @include primary-button;
+        margin-top: 1.8rem;
+    }
+}

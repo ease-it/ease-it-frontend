@@ -1,0 +1,54 @@
+@import "../../assets/sass/abstracts/variables";
+
+.whyChooseUs {
+    height: max-content;
+    text-align: center;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+
+    &__heading--1 {
+        color: $tertiary-color;
+        font-size: 2.5rem;
+        font-weight: bold;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__heading--2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 3.5rem;
+        color: $secondary-color;
+        word-spacing: .6rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+        }
+    }
+
+    &__card-box {
+        display: flex;
+        align-items: flex-end;
+
+        @media only screen and (max-width: $bp-large) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 2rem;
+        }
+
+    }
+
+}

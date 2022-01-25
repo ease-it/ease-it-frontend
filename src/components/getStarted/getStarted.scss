@@ -78,7 +78,7 @@
      }
 
      &__button {
-         max-width: 50%;
+         max-width: 40%;
          margin-left: 6rem;
          border: none;
          background-color: $secondary-color;
@@ -107,11 +107,11 @@
 
      &__download {
          max-width: 50%;
-         margin-left: 6rem;
+         margin-left: 2rem;
          background-color: $primary-color;
          font-size: 1.6rem;
          font-weight: bold;
-         padding: 1rem;
+         padding: 1.5rem;
          color: $color-black;
          text-align: center;
 

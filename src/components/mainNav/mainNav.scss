@@ -84,8 +84,7 @@
 
     &__search-button {
         @include icon-styles;
-        display: inline;
-        transform: translateY(5px);
+        display: inline-block;
         margin-left: .8rem;
     }
 }

@@ -58,7 +58,7 @@ const SignUp = () => {
 
                     {loading && <Loading />}
                 </form>
-                <button className="signUp__account" type="button" >Already have an account? Click here</button>
+                <a href="/login" className="signUp__account" type="button" >Already have an account? Click here</a>
             </div>
         </div>
 

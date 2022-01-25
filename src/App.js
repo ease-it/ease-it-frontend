@@ -1,9 +1,9 @@
-import './App.css';
+
 import Routing from './containers/Routing';
 
-const  App = () => {
+const App = () => {
   return (
-  <Routing/>
+    <Routing />
   )
 }
 

@@ -27,7 +27,10 @@ const Login = () => {
     }
     return (
         <div className='login'>
-            <img src={easeItpng} alt="ease-it logo" />
+            <a href="/">
+                <img src={easeItpng} alt="ease-it logo" />
+            </a>
+
             <h1 className='login__heading'>Login to Ease-it</h1>
 
             <div className='login__form-box'>
@@ -60,7 +63,7 @@ const Login = () => {
 
             </div>
             <div className='login__account-box'>
-                <a href="/" className='login__account'> <span>Don't have an account?</span> click here</a>
+                <a href="/signup" className='login__account'> <span>Don't have an account?</span> click here</a>
             </div>
 
         </div>

@@ -3,8 +3,8 @@ import AppLogo from "../../assets/ease-it.svg"
 const Reset3 = () => {
     return (
         <div>
-            <body className="box-border overflow-x-hidden font-monteserrat text-black bg-clr-5 tracking-wide">
-                <div className="w-full h-full my-0 mx-auto flex flex-col justify-around  lg:w-10/12">
+            <body className="box-border overflow-x-hidden font-monteserrat text-black bg-clr-5 tracking-wide body-full">
+                <div className="w-full h-full my-0 mx-auto flex flex-col justify-around lg:w-10/12">
                     <img className="mt-8 self-center drop-shadow-lg xsm:logo-img 3sm:logo-img2 3sm:self-start 3sm:w-24 3sm:ml-6 2xl:ml-28 4xl:w-2/4"
                         src={AppLogo} alt="ease-it logo" />
                     <main

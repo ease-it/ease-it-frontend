@@ -18,7 +18,7 @@ const MainNav = () => {
                     <a href="/" className="user-nav__link">Home</a>
                     <a href="/" className="user-nav__link">About Us</a>
                     <a href="/dashboard" className="user-nav__link">Dashboard</a>
-                    <a href="/" className="user-nav__link">Resources</a>
+                    <a href="/resources" className="user-nav__link">Resources</a>
                     <a href="/NewsEvent" className="user-nav__link">News & Events</a>
                     <a href="/" className='user-nav__link'> Search
                         <GrSearch className="user-nav__search-button" />

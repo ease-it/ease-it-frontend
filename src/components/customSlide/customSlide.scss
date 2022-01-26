@@ -1,0 +1,8 @@
+@import "../../assets/sass/abstracts/variables";
+
+.card-block {
+    background-color: $primary-bg-color;
+    margin: 1rem;
+    padding: 4rem;
+    min-height: max-content;
+}

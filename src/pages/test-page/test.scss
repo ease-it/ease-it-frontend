@@ -1,0 +1,87 @@
+@import "../../assets/sass/abstracts/mixins";
+@import "../../assets/sass/abstracts/variables";
+
+.test {
+    max-width: 120rem;
+    margin: 3rem auto;
+
+    h1 {
+        color: $secondary-color;
+        font-size: 3.4rem;
+    }
+
+    &__number {
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    &__timer {
+        display: flex;
+        flex-direction: column;
+
+        &-left {
+            color: $tertiary-color;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        &-count {
+            background-color: $tertiary-color;
+            color: $primary-color;
+            padding: 1rem;
+            box-shadow: $shadow-secondary;
+        }
+    }
+
+    &__question {
+        margin-top: 4rem;
+
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__answer {
+        min-height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        input {
+            margin: .7rem;
+        }
+
+        label {
+            color: $secondary-color;
+            font-weight: bold;
+        }
+    }
+
+    &__submit {
+        margin-top: 2rem;
+        padding: 1rem;
+
+        &-next {
+            background-color: $secondary-color;
+            color: $primary-color;
+            padding: .6rem 2.5rem;
+            margin-right: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: $shadow-primary;
+        }
+
+        &-skip {
+            background-color: $primary-bg-color;
+            color: $secondary-color;
+            padding: .6rem 2.5rem;
+            border-radius: 1rem;
+            box-shadow: $shadow-primary;
+        }
+    }
+}

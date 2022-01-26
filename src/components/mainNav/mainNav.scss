@@ -1,0 +1,90 @@
+@import "../../assets/sass/abstracts/mixins";
+@import "../../assets/sass/abstracts/variables";
+
+.user-nav {
+    margin: 2rem;
+    position: relative;
+
+
+    nav {
+        @media only screen and (max-width: $bp-large) {
+            padding: .5rem;
+            position: absolute;
+            flex: 1;
+            top: 2.5rem;
+            right: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+
+        }
+
+    }
+
+
+    &__img {
+        display: none;
+
+        @media only screen and (max-width: $bp-large) {
+            display: flex;
+            align-items: center;
+            padding: .5rem;
+        }
+    }
+
+    #menu-toggle,
+    .hamburger {
+        display: none;
+    }
+
+    .hamburger {
+        @media only screen and (max-width: $bp-large) {
+            display: flex;
+            font-size: 3rem;
+            color: $secondary-color;
+        }
+    }
+
+    #menu-toggle:checked~.user-nav__link-box {
+        @media only screen and (max-width: $bp-large) {
+            display: flex;
+            flex-direction: column;
+            background-color: $primary-bg-color;
+            padding: 2rem;
+        }
+    }
+
+    &__link-box {
+        display: flex;
+        flex-flow: row wrap;
+
+        @media only screen and (max-width: $bp-large) {
+            display: none;
+        }
+    }
+
+    &__link {
+        color: $secondary-color;
+        padding: 1.4rem;
+        font-weight: bold;
+        flex: 1 0;
+        text-align: center;
+
+        &:hover {
+            border-bottom: 5px solid $tertiary-color
+        }
+    }
+
+    &__button {
+        @include primary-button;
+        font-weight: bold;
+        font-size: 1.8rem
+    }
+
+    &__search-button {
+        @include icon-styles;
+        display: inline-block;
+        margin-left: .8rem;
+    }
+}

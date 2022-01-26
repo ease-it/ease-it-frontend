@@ -36,11 +36,9 @@ module.exports = {
         'clr-4': '#D39E2A',
         'clr-5': '#F7F7FD',
       },
-      // backgroundImage:{
-      //   'bg1': "url('./src/tailwind/newsletter.svg')"
-      // //   'bg2': "url('./images/bg-2.jpg')",
-      // //   'bg3': "url('./images/bg-3.jpg')"
-      // }
+      backgroundImage:{
+        'bg1': "url('./src/tailwind/newsletter.svg')"
+      }
     }
   },
   variants: {

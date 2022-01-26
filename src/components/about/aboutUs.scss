@@ -1,0 +1,44 @@
+@import "../../assets/sass/abstracts/variables";
+@import "../../assets/sass/abstracts/mixins";
+
+.aboutUs {
+    max-width: 120rem;
+    height: max-content;
+    background-color: $secondary-color;
+    margin: 5rem auto;
+    padding: 5rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        max-width: 100vw;
+        padding: 2rem;
+    }
+
+    &__text-box {
+        padding-left: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            max-width: 100vw;
+            text-align: center;
+            padding: 2rem;
+        }
+
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        color: $tertiary-color;
+    }
+
+    &__text {
+        color: $primary-color;
+        line-height: 2;
+    }
+}

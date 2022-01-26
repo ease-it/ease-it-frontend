@@ -1,0 +1,36 @@
+@import "../abstracts/variables";
+
+@mixin primary-button {
+    background-color: $tertiary-color;
+    color: $primary-color;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: $shadow-primary;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+        transform: translateY(-.1rem);
+        box-shadow: $shadow-secondary;
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+@mixin download-button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-black;
+    text-align: center;
+    display: inline-block;
+}
+
+@mixin icon-styles {
+    display: flex;
+    color: #161859;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}

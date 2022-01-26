@@ -1,0 +1,54 @@
+@import "../../assets/sass/abstracts/variables";
+@import "../../assets/sass/abstracts/mixins";
+
+.resources {
+    max-width: 120rem;
+    margin: 5rem auto;
+
+    h1 {
+        color: $secondary-color;
+    }
+
+    &__link-box {
+        border-bottom: 5px solid $primary-bg-color;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        padding: 0 4rem;
+        color: $secondary-color;
+        font-weight: bold;
+
+        &--active,
+        &:active {
+            border-bottom: 5px solid $secondary-color;
+        }
+
+        @media only scren and (max-width:$bp-small) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__contents {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+
+        @media only scren and (max-width:$bp-medium) {
+            grid-template-columns: min-content max-content;
+        }
+    }
+
+    &__content {
+        text-align: center;
+
+        img {
+            border-radius: 1rem;
+        }
+
+    }
+}

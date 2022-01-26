@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100;0,400;1,200;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{  
+    .reset-card{
+        width: 600px;
+        height: 400px;
+    }
+    .reset-card2{
+        width: 560px;
+        height: 360px;
+    }
+    .logo-img{
+        height:60px;
+    }
+    .logo-img2{
+        height:70px;
+    } 
+}
+
+
+body{
+    @apply box-border overflow-x-hidden font-monteserrat text-black bg-clr-5 tracking-wide;
+}
+.wrapper{
+    @apply w-full h-full my-0 mx-auto flex flex-col justify-around  
+    lg:w-10/12;
+}
+.logo{
+    @apply mt-8 self-center drop-shadow-lg 
+    xsm:logo-img 
+    3sm:logo-img2 3sm:self-start 3sm:w-24 3sm:ml-6 
+    2xl:ml-28 
+    4xl:w-2/4;    
+}
+main{
+    @apply flex flex-col justify-center m-6 
+    3sm:mx-14 3sm:my-4 
+    /* md:self-center  */
+    md:mx-20 
+    1md:mx-24 
+    2md:mx-32 2md:my-0 2md:self-center 
+    4md:my-0 4md:mx-0;
+
+}
+h2{
+    @apply self-start font-serif_display text-clr-2 drop-shadow-md font-semibold pb-2 tracking-wider xsm:text-lg 
+    2sm:text-xl 
+    lg:text-left 
+    2xl:text-2xl 
+    3xl:mb-4
+    4xl:my-4 4xl:text-5xl;
+} 
+section{
+    @apply bg-clr-3 rounded-lg p-4 pb-12 font-semibold drop-shadow-md tracking-wider 
+    xsm:text-sm 
+    sm:pb-14 
+    2sm:pb-32 
+    2sm:text-sm 
+    2md:reset-card2 
+    3md:reset-card 
+    2xl:text-base 2xl:pb-24 ;
+}
+form{
+    @apply w-full flex flex-col justify-start 
+    sm:px-4 
+    2sm:px-8 
+    3sm:px-10 
+    3md:px-20;
+}
+p{
+    @apply text-left;
+}
+input{
+    @apply bg-clr-3 border border-black/50 font-normal text-xs outline-none placeholder:text-black placeholder:font-bold placeholder:tracking-wider my-3 p-2 
+    2xl:text-base; 
+}
+.button{
+    @apply w-full bg-clr-2 text-white uppercase drop-shadow-lg p-2 mt-8 tracking-widest 
+    2sm:p-2 
+    2md:text-sm 
+    2xl:text-lg;
+}
+.signup-link{
+    @apply self-center border border-black/50 font-black mt-4 mx-2 p-1 text-center 
+    xsm:text-xxs 
+    sm:text-xs sm:px-px 
+    2sm:p-2 2sm:px-8 2sm:text-sm 
+    3sm:px-2 3sm:w-9/12 
+    2md:mx-2 
+    3md:w-8/12 
+    xl:py-2 
+    2xl:text-lg;
+}
+span{
+    @apply text-clr-2 font-extrabold;
+}

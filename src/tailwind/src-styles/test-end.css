@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.test-btn-wrapper{
+    @apply flex mt-10 font-monteserrat
+    xsm:flex-col
+    md:flex-row;
+}
+.test-btn{
+    @apply  bg-clr-2 text-white tracking-wider drop-shadow-lg rounded 
+    xsm:text-xs xsm:font-medium
+    smx:w-52 smx:px-0 smx:py-0 smx:-ml-3 
+    sm:w-max sm:px-6 sm:py-2 sm:rounded-xl
+    2sm:px-8 2sm:mr-6 2sm:rounded-2xl;
+}
+.skip{
+    @apply bg-clr-3 text-clr-2;
+}

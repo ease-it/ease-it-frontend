@@ -23,13 +23,13 @@ const Footer = () => {
                         <p className="text-xs text-clr-2">Follow us on Social Media</p>
 
                         <div className="footer__socials">
-                            <a href="/" className='footer__socials-icon'>
+                            <a href="https://www.facebook.com/Ease-it-100542219190033/" className='footer__socials-icon'>
                                 <GrFacebook className="react-icons" href='/' />
                             </a>
-                            <a href="/" className='footer__socials-icon'>
+                            <a href="https://www.instagram.com/easeit9/?r=nametag" className='footer__socials-icon'>
                                 <GrInstagram className="react-icons" />
                             </a>
-                            <a href="/" className='footer__socials-icon'>
+                            <a href="https://www.linkedin.com/company/ease-it9" className='footer__socials-icon'>
                                 <GrLinkedin className="react-icons" />
                             </a>
                             <a href="/" className='footer__socials-icon'>

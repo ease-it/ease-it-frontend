@@ -8,7 +8,9 @@ const UploadAssignment = () => (
     <div>
         <HeaderNav />
         <MainNav />
-        <UploadFile title="Upload Assignment" text="Import File From Your Computer" classText="fromComputerBtn" icon="arrow_drop_down" />
+        <div style={{ minHeight: "60vh" }}>
+            <UploadFile title="Upload Assignment" text="Import File From Your Computer" classText="fromComputerBtn" icon="arrow_drop_down" />
+        </div>
     </div >
 
 

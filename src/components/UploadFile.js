@@ -7,7 +7,8 @@ const UploadFile = ({ title, text, classText, icon }) => (
         <div >
             <input type="file" id="uploadFileFromComputer" />
             <label htmlFor="uploadFile" className="primary-color-blue fileLabel">
-                {text} <span class="material-icons pt pl">
+                {text}
+                <span class="material-icons pt pl">
                     {icon}
                 </span>
             </label>

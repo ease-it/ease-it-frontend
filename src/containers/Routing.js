@@ -9,8 +9,11 @@ import Protected from './Protected'
 import Reset3 from '../pages/reset/Reset3'
 import Reset2 from '../pages/reset/Reset2'
 import UploadAssignment from '../pages/assignment/UploadAssignment'
-import UploadTest from '../pages/testPage/UploadTest'
+import Test from "../pages/test-page/Test"
+import UploadTest from '../pages/test-page/UploadTest'
+import TestScore from '../pages/test-page/TestScore'
 import Attendance from '../pages/attendance/Attendance'
+import Resources from '../pages/resources-page/Resources'
 
 const Routing = () => {
     return (
@@ -20,11 +23,14 @@ const Routing = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/NewsEvent" element={<NewsEvent />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/*" element={<Protected />} />
             <Route path="/reset2" element={<Reset2 />} />
             <Route path="/reset3" element={<Reset3 />} />
             <Route path="/upload-assignment" element={<UploadAssignment />} />
+            <Route path="/test" element={<Test />} />
             <Route path="/upload-test" element={<UploadTest />} />
+            <Route path="result" element={<TestScore />} />
             <Route path="/attendance" element={<Attendance />} />
         </Routes>
     )

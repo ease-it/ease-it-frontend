@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderNav from '../../components/headerNav/HeaderNav'
 import MainNav from '../../components/mainNav/MainNav'
+import Footer from '../../components/footer/Footer'
 import UploadFile from '../../components/UploadFile'
 
 const UploadTest = () => (

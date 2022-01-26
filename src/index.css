@@ -65,3 +65,19 @@ li {
 .font-lighter {
     font-weight: 200;
 }
+
+.fileLabel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.white-text {
+    color: #fff;
+    cursor: pointer;
+}
+
+.body-full {
+    max-width: 100vw;
+    height: 70vh;
+    font-size: 3rem;
+}

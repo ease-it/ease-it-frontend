@@ -1,10 +1,11 @@
 import React from 'react'
+import Footer from '../../components/footer/Footer'
 import AppLogo from "../../assets/ease-it.svg"
 
 const Reset2 = () => {
     return (
         <div>
-            <body className="box-border overflow-x-hidden font-monteserrat text-black bg-clr-5 tracking-wide">
+            <body className="box-border overflow-x-hidden font-monteserrat text-black bg-clr-5 tracking-wide body-full">
                 <div className="w-full h-full my-0 mx-auto flex flex-col justify-around lg:w-10/12">
                     <img className="mt-8 self-center drop-shadow-lg xsm:logo-img 3sm:logo-img2 3sm:self-start 3sm:w-24 3sm:ml-6 2xl:ml-28 4xl:w-2/4"
                         src={AppLogo} alt="ease-it logo" />
@@ -41,10 +42,10 @@ const Reset2 = () => {
                                 <input
                                     className="self-center bg-clr-2 text-white uppercase drop-shadow-lg p-1 mt-5 tracking-widest xsm:w-3/4 sm:w-3/5 2sm:p-2 md:w-3/5 2md:text-sm 2xl:text-lg"
                                     type="button" value="Submit" />
-                                <p className="mt-2 xsm:pt-4 pb-0 3xl:mx-8">Didn't receive any code?</p>
-                                <input className=" self-center bg-clr-2 text-white uppercase drop-shadow-lg p-1 mt-5 tracking-widest
+                                <p className="mt-2 xsm:pt-4 pb-0 3xl:mx-8 ">Didn't receive any code?</p>
+                                <input className=" self-center bg-clr-2 white-text uppercase drop-shadow-lg p-1 mt-5 tracking-widest
                         xsm:w-3/4 sm:w-3/5 2sm:p-2 md:w-3/5 2md:text-sm 2xl:text-lg bg-white text-clr-2 font-semibold
-                        tracking-normal 3md:font-black" type="button" value="Resend Code" />
+                        tracking-normal 3md:font-black " type="button" value="Resend Code" />
                             </form>
                         </section>
                         <a className="self-center border border-black/50 font-black mt-4 mx-2 p-1 text-center xsm:text-xxs sm:text-xs 2sm:p-2 2sm:px-8 2sm:text-sm 3sm:px-12 xl:py-2 2xl:text-lg"
